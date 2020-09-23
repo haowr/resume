@@ -41,7 +41,7 @@
         $interval(function(){
             $scope.flameTrigger()
             console.log(":)")
-        },100)
+        },500)
    
         $scope.fadeInRight = false;
         $scope.fadeInRight2 = false;
