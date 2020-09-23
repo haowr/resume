@@ -22,6 +22,27 @@
             $scope.loaded = true;
         }, 500)
 
+        $scope.flameOn = true;
+        $scope.flameOff = false;
+        $scope.flameTrigger = function(){
+
+            if($scope.flameOn){
+                $scope.flameOn = false;
+                $scope.flameOff = true;
+
+            }else{
+                $scope.flameOff = false;
+                $scope.flameOn = true;
+            }
+
+
+        }
+
+        $interval(function(){
+            $scope.flameTrigger()
+            console.log(":)")
+        },100)
+   
         $scope.fadeInRight = false;
         $scope.fadeInRight2 = false;
         $scope.fadeInRight3 = false;
