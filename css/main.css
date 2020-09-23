@@ -248,6 +248,11 @@ background: linear-gradient(21deg, rgba(157,193,221,1) 0%, rgba(216,228,237,1) 8
   font-family: "brandon";
   src: url(../fonts/brand_ssv/Brandon_reg.otf) format("truetype");
 }
+@font-face {
+  font-family: "shem";
+  src: url(../fonts/ppp.ttf) format("truetype");
+}
+
 .opensans{
   font-family:'Open Sans'
 }
