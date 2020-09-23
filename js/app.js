@@ -24,15 +24,84 @@
 
         $scope.flameOn = true;
         $scope.flameOff = false;
+        $scope.flameOn2 = true;
+        $scope.flameOff2 = false;
+        $scope.flameOn3 = true;
+        $scope.flameOff3 = false;
+        $scope.flameOn4 = true;
+        $scope.flameOff4 = false;
+        $scope.flameOn5 = true;
+        $scope.flameOff5 = false;
+        $scope.up = true;
+        $scope.right = false;
+        $scope.down = false;
+        $scope.left= false;
+        
         $scope.flameTrigger = function(){
 
             if($scope.flameOn){
                 $scope.flameOn = false;
                 $scope.flameOff = true;
+                
+                console.log("on")
 
             }else{
                 $scope.flameOff = false;
                 $scope.flameOn = true;
+                console.log("off")
+            }
+            if($scope.flameOn2){
+                $scope.flameOn2 = false;
+                $scope.flameOff2 = true;
+                
+                console.log("on")
+
+            }else{
+                $scope.flameOff2 = false;
+                $scope.flameOn2 = true;
+                console.log("off")
+            }
+            if($scope.flameOn3){
+                $timeout(function(){
+                    $scope.flameOn3 = false;
+                    $scope.flameOff3 = true;
+                    
+                    console.log("on")
+
+                },100)
+             
+
+            }else{                $timeout(function(){
+
+                $scope.flameOff3 = false;
+                $scope.flameOn3 = true;
+                console.log("off")
+            })
+            }
+
+            if($scope.up){
+
+                $scope.up = false;
+                $scope.right = true;
+
+                console.log("Up")
+
+            }else if($scope.right){
+                $scope.right = false;
+                $scope.down = true;
+                console.log("right")
+
+            }else if($scope.down){
+                $scope.down = false;
+                $scope.left = true
+                console.log("down")
+
+
+            }else if($scope.left){
+                $scope.left = false;
+                $scope.up = true;
+                console.log("left")
+
             }
 
 
@@ -41,7 +110,7 @@
         $interval(function(){
             $scope.flameTrigger()
             console.log(":)")
-        },500)
+        },1000)
    
         $scope.fadeInRight = false;
         $scope.fadeInRight2 = false;

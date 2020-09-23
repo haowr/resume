@@ -59,6 +59,18 @@ nav .brand-logo {
   width: 100%;
 }
 
+
+.slightup{
+  left:15;
+
+}
+.slightright{
+  right:30;
+}
+.slightdown{
+  top:1000;
+}
+
 .boxshadow{
   box-shadow:2px 2px 2px grey;
 }
