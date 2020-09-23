@@ -1,23 +1,31 @@
-<html ng-controller="mainCtrl as main" ng-app="store" ng-cloak>
+<html ng-controller="mainCtrl as main" class="background" ng-app="store">
 
 <head>
 
-  <title>Shine Designs | App House?
-  </title>
+  <title>Shine Designs | App House?</title>
+
   <meta name="theme-color" content="#cedfec" />
+  <meta name="DESCRIPTION"
+    content="Your Modern Web. A web application is the way the modern web user interacts with web content. Get in touch and build your own! ">
   <base href="/">
+
+  <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
+
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
     crossorigin="anonymous" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN">
+  <link href="./css/main.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lato|Ubuntu&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" />
-  <!-- Compiled and minified JavaScript -->
+
+  <!-- JavaScript Dependencies -->
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.5.1/snap.svg-min.js" integrity="sha256-oI+elz+sIm+jpn8F/qEspKoKveTc5uKeFHNNVexe6d8=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
@@ -27,473 +35,382 @@
   <script src="./js/angular-chart.js"></script>
   <script src="./js/app.js" type="text/javascript"></script>
   <script src="./js/routes.js" type="text/javascript"></script>
-  <script src="./js/ng-file-upload-shim.js" type="text/javascript"></script>
-  <script src="./js/ng-file-upload.js" type="text/javascript"></script>
 
-  <!--TEMPLATES -->
-  <script type="text/ng-template" id="./themes.html">template content</script>
-
- 
+  <!-- JavaScript Dependencies -->
 
 </head>
 
 
-<body style="background-image:url('./public/images/fz.jpg');
-              background-size:cover;" >
-    <div class="navbar-fixed"style="z-index:100000; ">
+<body>
 
-  <nav  >
-    <div class="nav-wrapper no-shadows white" >
+  <div class="navbar-fixed" style="z-index:100000; ">
 
-      <a href="#" class=" button-collapse right"  data-activates="mobile-demo" ><i class = "material-icons black-text"style='font-size:60px;'>menu</i></a>
+
+    <nav>
+      <div class="nav-wrapper no-shadows grey darken-4">
+
+        <a href="https://shinedesigns.ca"> <img src='./images/menulogo.svg' class="responsive-img hide-on-med-and-down"
+            style="opacity:.6;height:40px; width:40px; position:absolute; top:.5rem; left:0;"></a>
+        <a href="https://shinedesigns.ca"> <img src='./images/menulogo.svg' class="responsive-img hide-on-large-only"
+            style="opacity:.6;height:40px; width:40px; position:absolute; top:.5rem; left:0;"></a>
+        <a href="#" class=" button-collapse right" data-activates="mobile-demo"><i class="material-icons black-text"
+            style='font-size:60px;'>menu</i></a>
+
+        <ul class="right hide-on-med-and-down" style="position:absolute;top:0; right:0;">
+
+          <li><a href="https://shinedesigns.ca" class="montserrat black-text text-lighten-2" style="font-size:20px;">Home</a></li>
+          <li><a href="./info.html" class="montserrat black-text text-lighten-2" style="font-size:20px;">Info</a></li>
+          <li><a href="./themes.html" class="montserrat black-text text-lighten-2" style="font-size:20px;">Design</a></li>
+          <li><a href="./serverprices.html" class="montserrat black-text text-lighten-2" style="font-size:20px;">Server</a></li>
+          <li><a href="./storageprices.html" class="montserrat black-text text-lighten-2" style="font-size:20px;">Storage</a></li>
+          <li><a href="./contact.html" class="montserrat black-text text-lighten-2" style="font-size:20px;">Contact</a></li>
+
+        </ul>
 
        
-         <div class="row"></div>
+        <ul class="side-nav white lighten-5" id="mobile-demo" style='width:70%;'>
 
-         <li><a href="https://shinedesigns.ca"class= "montserrat black-text text-lighten-2" style="font-size:18px;">Home</a></li>
-         <li><a href="./info.html"class= "montserrat black-text text-lighten-2" style="font-size:18px;">Info</a></li>
-         <li><a href="./themes.html"class= "montserrat black-text text-lighten-2" style="font-size:18px;">Design</a></li>
-         <li><a href="./serverprices.html"class= "montserrat black-text text-lighten-2"style="font-size:18px;">Server</a></li>
-         <li><a href="./storageprices.html"class= "montserrat black-text text-lighten-2"style="font-size:18px;">Storage</a></li>
-         <li><a href="./contact.html"class= "montserrat black-text text-lighten-2"style="font-size:18px;">Contact</a></li>
+            <li style="border-bottom:2px solid black;">
 
-     
-      <div>
-      <ul class="side-nav white lighten-5" id="mobile-demo" style='width:70%;' >
-          <li style="border-bottom:2px solid black;">  
-              <img src='./images/menulogo.svg' class="responsive-img"style='display:inline;top:1rem; position:absolute; '>
+              <img src='./images/menulogo.svg' class="responsive-img" style='display:inline;top:1rem; position:absolute; '>
 
-              <div class="col s12 left-align " style="position:fixed; top: 1rem; width:60rem; background-image:url('./images/wind.svg');">
-               
-               <!-- <h2 class= "montserrat black-text">Shine Designs</h2>-->
+              <div class="col s12 left-align ">
                 <br>
                 <br>
                 <br>
               </div>
+
             </li>
-        <li><!-- <br><img src='./images/homemenu.svg' style='display:inline; position:fixed; top:7rem; border-right:1px solid'>--><a href="sass.html"class= "montserrat black-text" style="font-size:40px;display:inline; position:fixed; top:13rem; left:20%; border-right:1px solid black;border-bottom:1px solid black;">HOME</a></li>
-        <li><!--<br><img src='./images/storagemenu.svg' style='display:inline; position:fixed; top:18rem;''>--><a href="/info"class= "montserrat black-text " style="font-size:40px;display:inline; position:fixed; top:24rem; left:20%; border-right:1px solid black;border-bottom:1px solid black;">INFO</a></li>
-        <li><!--<br><img src='./images/themebluemenu.svg' style='display:inline; position:fixed; top:29rem;''>--><a href="/themes"class= "montserrat black-text " style="font-size:40px;display:inline; position:fixed; top:35rem; left:20%; border-right:1px solid black;border-bottom:1px solid black;">THEMES</a></li>
-        <li><!--<br><img src='./images/servermenu.svg' style='display:inline; position:fixed; top:40rem;''>--><a href="/serverprices"class= "montserrat black-text "style="font-size:40px;display:inline; position:fixed; top:46rem; left:20%; border-right:1px solid black;border-bottom:1px solid black;">SERVER</a></li>
-        <li><!--<br><img src='./images/buildmenu.svg' style='display:inline; position:fixed; top:51rem;''>--><a href="/storageprices"class= "montserrat black-text "style="font-size:40px;display:inline; position:fixed; top:57rem; left:20%; border-right:1px solid black;border-bottom:1px solid black;">STORAGE</a></li>
-        <li><!--<br><img src='./images/servermenu.svg' style='display:inline; position:fixed; top:40rem;''>--><a href="/serverprices"class= "montserrat black-text "style="font-size:40px;display:inline; position:fixed; top:46rem; left:20%; border-right:1px solid black;border-bottom:1px solid black;">PACKAGES</a></li>
 
-        <li><!--<br><img src='./images/mobilemenu.svg' style='display:inline; position:fixed; top:62rem;''>--><a href="/estimate"class= "montserrat black-text "style="font-size:40px;display:inline; position:fixed; top:68rem; left:20%; border-right:1px solid black;border-bottom:1px solid black;">CONTACT</a></li>
-        <li>
-          <div class = "col s4"></div>
-            <div class="col s8 left-align " style=" position:fixed; top: 74rem; height: 30rem;width:60rem;left:20%;" >
-              
-              <ul>
-                  <li><img src='./images/infomenu.svg' class="responsive-img" style='display:inline; position:absolute; '><a class="black-text montserrat " style=' font-size:35px;position:fixed;top:80rem;left:20rem;' href="/storage">INFO</a></li>
-                  <li><img src='./images/storageminimenu.svg' class="responsive-img"style='display:inline;top:10rem; position:absolute; '><a class="black-text montserrat" style="font-size:40px;display:inline;position:fixed;top:90rem;left:20rem; " href="/themes">THEMES</a></li>
-                  <!--<li><img src='./images/themebluemenu.svg' style='display:inline; position:fixed; '><a class="black-text text-lighten-3" style="font-size:40px;display:inline; " href="/server">Server</a></li>
-                  <li><img src='./images/themebluemenu.svg' style='display:inline; position:fixed; '><a class="black-text text-lighten-3" style="font-size:40px;display:inline; " href="/estimate">Build</a></li>-->
-                </ul>
+            <li>
+               <a href="https://shinedesigns.ca" class="montserrat black-text" style="font-size:40px;display:inline; position:fixed; top:13rem; left:20%; border-right:1px solid black;border-bottom:1px solid black;">HOME</a>
+            </li>
+            <li>
+
+              <a href="./info.html" class="montserrat black-text " style="font-size:40px;display:inline; position:fixed; top:24rem; left:20%; border-right:1px solid black;border-bottom:1px solid black;">INFO</a>
+            
+            </li>
+            <li>
+              <a
+                href="./themes.html" class="montserrat black-text "
+                style="font-size:40px;display:inline; position:fixed; top:35rem; left:20%; border-right:1px solid black;border-bottom:1px solid black;">THEMES</a>
+            </li>
+            <li>
+             <a
+                href="./serverprices.html" class="montserrat black-text "
+                style="font-size:40px;display:inline; position:fixed; top:46rem; left:20%; border-right:1px solid black;border-bottom:1px solid black;">SERVER</a>
+            </li>
+            <li>
+              <a
+                href="./storageprices.html" class="montserrat black-text "
+                style="font-size:40px;display:inline; position:fixed; top:57rem; left:20%; border-right:1px solid black;border-bottom:1px solid black;">STORAGE</a>
+            </li>
+            <li>
+              <a
+                href="./contact.html" class="montserrat black-text "
+                style="font-size:40px;display:inline; position:fixed; top:68rem; left:20%; border-right:1px solid black;border-bottom:1px solid black;">CONTACT</a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+  </div>
+
+  
+  <div style='height:100%;'>
+
+    <!-- MOBILE SITE-->
+
+    <div class="row background animated fadeIn hide-on-large-only" ng-cloak>
+
+
+      <div class="col s12" style="border:2px solid white;"></div>
+      <div class="col s12">
+
+        <img class="animated fadeIn img-responsive" src="./images/sbanner2.svg">
+
+        <div class="col s4"></div>
+        <div class="col s4"></div>
+        <div class="col s4"></div>
+
+        <div class="row"></div>
+
+        <div class="col s12" style="border:1px solid grey;"></div>
+        <div class="col s12 center-align">
+
+          <br>
+          <h1 class="montserrat center-align ">Welcome To Shine Designs!?</h1>
+
+          <p class="flow-text  montserrat" style='font-size:28px;'>
+            In these modern times, you need your website to do more than just display static information.
+            It can be the engine that powers your business, whether small-scale, enterprise, or unicorn!
+            Turn your website into an application that can rival, and even surpass a regular mobile application.
+          </p>
+
+        </div>
+
+        <div class="row"></div>
+        <div class="row"></div>
+        <div class="row"></div>
+        <div class="row"></div>
+        <div class="row"></div>
+        <div class="row"></div>
+
+        <div class="section scrollspy " id="storage">
+
+          <div class="row">
+
+            <div class="col s6 center-align ">
+
+              <a href="./themes.html"><img class="img-responsive animated " src='./images/designgrid2.svg' /></a>
+
             </div>
-          </li>
-        <li>
-        <!--<div class="col s12 left-align " style=" background-color:#cedfec; position:fixed; top: 100rem; width:60rem; background-image:url('./images/wind.svg');">
-          <img src='./images/logo.svg' class="responsive-img"style='display:inline;top:100rem; position:absolute; '>
-          <h2 class= "montserrat white-text">Shine Designs</h2>
-          <p class="white-text">jflajsdlf</p>
-        </div>-->
-      </li>
-      </ul>
-   
-    
-       
-    
+
+            <div class="col s6 center-align">
+
+              <h2 class="montserrat center-align">Design Your World!</h1>
+
+                <div class="col s12" style="border:1px solid white;"></div>
+
+                <p class="flow-text  montserrat" style='font-size:28px;'>
+                  Let's work together to bring your vision to your clientel. From conception to inception!
+                </p>
+
+                <div class="col s8 right-align">
+
+                  <a href="./themes.html">
+                    <p class=" montserrat flow-text" style="position:relative; top:-2rem;font-size:30px;"> More Details</p>
+                  </a>
+
+                </div>
+                <div class="col s4 left-align">
+
+                  <a href="./themes.html"> <img class="img-responsive animated " src="./images/moredetails.svg"></a>
+
+                </div>
+
+            </div>
+
+          </div>
+
+          <div class="row">
+
+            <div class="col s6 center-align ">
+
+              <a href="./serverprices.html"><img class="img-responsive animated " src='./images/power.svg' /></a>
+
+            </div>
+
+            <div class="col s6 center-align">
+
+              <h2 class="montserrat center-align">Power Your Vision!</h2>
+
+              <div class="col s12" style="border:1px solid white;"></div>
+
+              <p class="flow-text  montserrat" style='font-size:28px;'>
+                The server is the heart and core of your online world. We'll help you select and configure a rig
+                that'll handle any load you throw at it.
+              </p>
+
+              <div class="col s8 right-align">
+
+                <a href="./serverprices.html">
+
+                  <p class=" montserrat flow-text" style="position:relative; top:-2.5rem;font-size:30px;"> More Details</p>
+
+                </a>
+
+              </div>
+
+              <div class="col s4 left-align">
+
+                <a href="./serverprices.html"> <img class="img-responsive animated " src="./images/moredetails.svg"></a>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="row">
+
+            <div class="col s6 center-align ">
+
+              <a href="./storageprices.html"><img class="img-responsive animated " src='./images/datastore.svg' /></a>
+
+            </div>
+
+            <div class="col s6 center-align">
+
+              <h2 class="montserrat center-align">Protect Your Data!</h2>
+
+              <div class="col s12" style="border:1px solid white;"></div>
+
+              <p class="flow-text  montserrat" style='font-size:28px;'>
+                Your clientel's personal data is important, and very valuable; both to yourself and bad actors.
+                We'll secure your data high up in the cloud, where bad actors can't get to it.
+              </p>
+
+              <div class="col s8 right-align">
+
+                <a href="./storageprices.html">
+                  <p class=" montserrat flow-text" style="position:relative; top:-2rem;font-size:30px;"> More Details</p>
+                </a>
+
+              </div>
+
+              <div class="col s4 left-align">
+
+                <a href="./storageprices.html"> <img class="img-responsive animated "
+                    src="./images/moredetails.svg"></a>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="col s12 center-align" style="border:1px solid white;">
+        <h2 class="montserrat">Get In Touch!</h2>
+
+        <p class="flow-text  montserrat" style='font-size:28px;'>
+          We're here to help. If you have any questions, ( and we're sure you do ), or you're ready to set up an
+          application package...
+
+        </p>
+        <a class="montserrat flow-text" style="font-size:30px;" href="./contact.html">Contact Us!</a>
+      </div>
+
+      <div class="row"></div>
+      <div class="row"></div>
+      <div class="row"></div>
+      <div class="row"></div>
+
+      <script class="hide-on-large-only">
+
+        $('.scrollspy').scrollSpy({
+          scrollOffset: -20
+        });
+
+      </script>
+
     </div>
-  </nav>
-    </div>
-    <!--<div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>-->
-      <!--<div style="width:100%; height:100%; background-color:black; z-index: 10000; opacity: .2;"></div>-->
-<!--<div ng-view   autoscroll="true">
-    
-</div>
--->
-</body>
-</html>
-<script>
-  window.onscroll = function() {scrollFunction()};
 
-function scrollFunction() {
-  if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
-    document.getElementById("menu").style.padding = "00px 0px";
-    document.getElementById("menu").style.height = "150px";
-    document.getElementById("menu").style.position = "fixed";
-   document.getElementById("links3").classList.add('fadeOut')
-   document.getElementById("links2").classList.add('fadeOut')
+    <!-- MOBILE SITE-->
 
-   document.getElementById("links").classList.add('fadeOut')
+    <!-- DESKTOP SITE-->
 
 
+    <div class="row background animated fadeIn hide-on-med-and-down" ng-cloak>
 
+      <div class="row">
 
+          <div class = "col s12">
 
+            <div class = "row">
 
-    //document.getElementById("logo").style.fontSize = "25px";
-  } else {
-   // document.getElementById("menu").style.padding = "80px ";
-   document.getElementById("menu").style.height = "250px";
-    //document.getElementById("menu").style.position = "relative";
-    document.getElementById("links").style.display = "inline";
-    document.getElementById("links2").style.display = "inline";
+            <div class = "col s6">
 
-    document.getElementById("links3").style.display = "inline";
-    document.getElementById("links3").classList.remove('fadeOut')
-   document.getElementById("links2").classList.remove('fadeOut')
+              <img class = "responsive-image" style="opacity:0;" src="./images/1.jpg">
 
-   document.getElementById("links").classList.remove('fadeOut')
-    document.getElementById("links3").classList.add('fadeIn')
-   document.getElementById("links2").classList.add('fadeIn')
+            </div>
+            <div class = "col s6">
+              <object class="center-align responsive-img" id="svg-object" data='./images/owr.svg' style="height:200px; width:200px;"type="image/svg+xml"></object>
 
-   document.getElementById("links").classList.add('fadeIn')
-    ///document.getElementById("links").style.display = "none";
+              <p class = "montserrat center-align flow-text white-text" > OHRHA</p>
+              
+            </div>
 
+            </div>
 
-   // document.getElementById("logo").style.fontSize = "35px";
-  }
-}
-  /*function fadeOutMenu(el){
-    var windowHeight = jQuery( window ).height();
-    $(el).each(function(){
-        var thisPos = $(this).offset().top;
+          </div>
+          </div>
 
-        var topOfWindow = $(window).scrollTop();
-        //console.log(topof)
-        if (topOfWindow + windowHeight - 1000 > thisPos ) {
-          if(el === '.hobby'){
-            var $this = $( this )
-            setTimeout(function(){
-              $($this).addClass("fadeInRight");
-
-            },100)
-
-          }
-          if(el === '.hobby2'){
-            var $this = $( this )
-
-            setTimeout(function(){
-              $($this).addClass("fadeInRight");
-
-            },200)
-          
-            
-          }
-           if(el === '.menu'){
-            var $this = $( this )
-console.log("run")
-            //setTimeout(function(){
-              $($this).removeClass("fadeOut");
-              $($this).addClass("fadeIn");
-            
-
-           // },300)
-          
-            
-          }
-            
-        }
-       /* if (topOfWindow + windowHeight - 2000 < thisPos ) {
-          if(el === '.hobby'){
-            var $this = $( this )
-            setTimeout(function(){
-              $($this).addClass("fadeInRight");
-
-            },100)
-
-          }
-          if(el === '.hobby2'){
-            var $this = $( this )
-
-            setTimeout(function(){
-              $($this).addClass("fadeInRight");
-
-            },200)
-          
-            
-          }
-           if(el === '.menu'){
-             console.log("RUNNY")
-            var $this = $( this )
-
-            //setTimeout(function(){
-              $($this).addClass("fadeOut");
-              //windowHeight= windowHeight+2000;
-
-           // },300)
-          
-            
-          }
-            
-        }*/
-   // });
-  //}*/
-function showImages(el) {
-    var windowHeight = jQuery( window ).height();
-    $(el).each(function(){
-        var thisPos = $(this).offset().top;
-
-        var topOfWindow = $(window).scrollTop();
-        //console.log(topof)
-        if (topOfWindow + windowHeight - 1000 > thisPos ) {
-          if(el === '.hobby'){
-            var $this = $( this )
-            setTimeout(function(){
-              $($this).addClass("fadeInRight");
-
-            },100)
-
-          }
-          if(el === '.hobby2'){
-            var $this = $( this )
-
-            setTimeout(function(){
-              $($this).addClass("fadeInRight");
-
-            },200)
-          
-            
-          }
-           if(el === '.hobbyThree'){
-            var $this = $( this )
-
-            setTimeout(function(){
-              $($this).addClass("fadeInRight");
-
-            },300)
-          
-            
-          }
-            
-        }
-    });
-}
-function showImages6(el) {
-    var windowHeight = jQuery( window ).height();
-    $(el).each(function(){
-        var thisPos = $(this).offset().top;
-
-        var topOfWindow = $(window).scrollTop();
-        //console.log(topof)
-        if (topOfWindow + windowHeight - 3890 > thisPos ) {
-        
-    
-           if(el === '.hobbyThree'){
-            var $this = $( this )
-
-            setTimeout(function(){
-              $($this).addClass("fadeIn");
-
-            },300)
-          
-            
-          }
-            
-        }
-    });
-}
-function showImages5(el) {
-    var windowHeight = jQuery( window ).height();
-    $(el).each(function(){
-        var thisPos = $(this).offset().top;
-
-        var topOfWindow = $(window).scrollTop();
-        //console.log(topof)
-        if (topOfWindow + windowHeight - 3710 > thisPos ) {
-        
-          if(el === '.hobby2'){
-            var $this = $( this )
-
-            setTimeout(function(){
-              $($this).addClass("fadeIn");
-
-            },200)
-          
-            
-          }
-           if(el === '.hobby3'){
-            var $this = $( this )
-
-            setTimeout(function(){
-              $($this).addClass("fadeIn");
-
-            },300)
-          
-            
-          }
-            
-        }
-    });
-}
-function showImages4(el) {
-    var windowHeight = jQuery( window ).height();
-    $(el).each(function(){
-        var thisPos = $(this).offset().top;
-
-        var topOfWindow = $(window).scrollTop();
-        //console.log(topof)
-        if (topOfWindow + windowHeight -100 > thisPos ) {
-          if(el === '.hobby'){
-            var $this = $( this )
-            setTimeout(function(){
-              $($this).addClass("fadeIn");
-
-            },100)
-
-          }
-          if(el === '.hobby2'){
-            var $this = $( this )
-
-            setTimeout(function(){
-              $($this).addClass("fadeIn");
-
-            },200)
-          
-            
-          }
-           if(el === '.hobby3'){
-            var $this = $( this )
-
-            setTimeout(function(){
-              $($this).addClass("fadeIn");
-
-            },300)
-          
-            
-          }
-            
-        }
-    });
-}
-function showImages3(el) {
-    var windowHeight = jQuery( window ).height();
-    $(el).each(function(){
-        var thisPos = $(this).offset().top;
-
-        var topOfWindow = $(window).scrollTop();
-        //console.log(topof)
-        if (topOfWindow + windowHeight - 1200 > thisPos ) {
-          if(el === '.hobbyTwo'){
-            var $this = $( this )
-            setTimeout(function(){
-              $($this).addClass("fadeIn");
-
-            },100)
-
-          }
-          if(el === '.hobby22'){
-            var $this = $( this )
-
-            setTimeout(function(){
-              $($this).addClass("fadeIn");
-
-            },200)
-          
-            
-          }
-           if(el === '.hobbyThree2'){
-            var $this = $( this )
-
-            setTimeout(function(){
-              $($this).addClass("fadeIn");
-
-            },300)
-          
-            
-          }
-            
-        }
-    });
-}
-function startupImages(el){
-  console.log("startup")
-  $(el).each(function(){
-  if(el === '.hobby'){
-            var $this = $( this )
-            setTimeout(function(){
-              $($this).addClass("fadeIn");
-
-            },100)
-
-          }
-          if(el === '.hobby2'){
-            var $this = $( this )
-            console.log(2)
-            setTimeout(function(){
-              $($this).addClass("fadeIn");
-
-            },200)
-          
-            
-          }
-           if(el === '.hobbyThree'){
-            var $this = $( this )
-
-            setTimeout(function(){
-              $($this).addClass("fadeIn");
-
-            },300)
-          
-            
-          }
-        })
-            
-}
-function showImagesTwo(el) {
-    var windowHeight = jQuery( window ).height();
-    $(el).each(function(){
-        var thisPos = $(this).offset().top;
-
-        var topOfWindow = $(window).scrollTop();
-        if (topOfWindow + windowHeight - 1000 > thisPos ) {
-          
-           if(el =='.hobbyThree'){
-             console.log('log')
-            setInterval(function(){
-              $(this).addClass("fadeInTop");
-
-            },20)
-          }
-            
-        }
-    });
-}
-
- 
-// if the image in the window of browser when the page is loaded, show that image
-//$(document).ready(function(){
-        //showImages('.hobby');
-        //showImages('.hobby2');
-        //showImages('.hobbyThree');
-        //startupImages('.hobby')
-        //startupImages('.hobby2')
-        //startupImages('.hobbyThree')
-//});
-
-// if the image in the window of browser when scrolling the page, show that image
-$(window).scroll(function() {
-  //showImages('.hobby');
-        //showImages('.hobby2');
-        //showImages('.hobbyThree');
-        //fadeOutMenu('.menu')
-        //showImages4('.hobby');
-        showImages5('.hobby2');
-        showImages6('.hobbyThree');
-});
-    $(document).ready(function () {
-      //showImages4('.hobby');
-     // $('.sidenav').sidenav('methodName', paramName);
-      $(".button-collapse").sideNav({closeOnClick: true});
-      $('.slider').slider();
-      $('.parallax').parallax();
-
-      $('.scrollspy').scrollSpy({
-        scrollOffset: 115
-      });
      
-      $(".dropdown-trigger").dropdown();
-     // $(".button-collapse").sideNav()
-    });
-  </script>
+
+        <div class="row">
+
+          <div class="row"></div>
+          <div class="col l2"></div>
+          <div class="col l8 center-align">
+
+            <h3 class="montserrat">Get In Touch!</h3>
+
+            <div class="col l12" style="border:1px solid white;"></div>
+
+            <p class="flow-text  montserrat" style='font-size:22px;'>
+              We're here to help. If you have any questions, ( and we're sure you do ), or you're ready to set up an
+              "App Pack"...
+            </p>
+
+           <!-- <a class="montserrat flow-text" style="font-size:30px;" href="./contact.html">Contact Us!</a>-->
+
+          </div>
+
+          <div class="col l2"></div>
+
+        </div>
+      </div>
+
+        <script class="hide-on-med-and-down">
+          $('.scrollspy').scrollSpy({
+            scrollOffset: 35
+          });
+        </script>
+
+      </div>
+
+      <script class="hide-on-med-and-down">
+        $('.scrollspy').scrollSpy({
+          scrollOffset: -650
+        });
+      </script>
+
+      <!-- DESKTOP SITE-->
+
+    </div>
+
+</body>
+
+</html>
+
+<script>
+  window.onscroll = function () { scrollFunction() };
+
+  function scrollFunction() {
+
+    if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+
+      document.getElementById("menu").style.padding = "00px 0px";
+      document.getElementById("menu").style.height = "150px";
+      document.getElementById("menu").style.position = "fixed";
+      document.getElementById("links3").classList.add('fadeOut')
+      document.getElementById("links2").classList.add('fadeOut')
+      document.getElementById("links").classList.add('fadeOut')
+
+    } else {
+
+      document.getElementById("menu").style.height = "250px";
+      document.getElementById("links").style.display = "inline";
+      document.getElementById("links2").style.display = "inline";
+      document.getElementById("links3").style.display = "inline";
+      document.getElementById("links3").classList.remove('fadeOut')
+      document.getElementById("links2").classList.remove('fadeOut')
+      document.getElementById("links").classList.remove('fadeOut')
+      document.getElementById("links3").classList.add('fadeIn')
+      document.getElementById("links2").classList.add('fadeIn')
+      document.getElementById("links").classList.add('fadeIn')
+
+    }
+  }
+  $(document).ready(function () {
+
+    $(".button-collapse").sideNav({ closeOnClick: true });
+    $(".dropdown-trigger").dropdown();
+  });
+</script>
