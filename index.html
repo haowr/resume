@@ -194,7 +194,8 @@
 
                 <div class = "animated fadeIn">
 
-<div class = "row" ng-show="musicPageOpen">
+<div class = "row " ng-show="musicPageOpen">
+  <div class="hide-on-med-and-down">
 
                   <div class = 'col s2'>
 
@@ -218,6 +219,27 @@
                   <div class = 'col s2'>                    
 
                   </div>
+      </div>
+
+</div>
+<div class = "row " ng-show="musicPageOpen">
+  <div class="hide-on-large-only">
+  <div class = 'col s2'>
+
+  </div>
+  <div class = 'col s4' ng-click="openAlbumBuy(1)">
+    <img src="./images/vv.jpg" class="responsive-img" > 
+
+  </div>
+  <div class = 'col s4' ng-click="openAlbumBuy(2)">
+    <img src="./images/vvback.jpg" class="responsive-img" > 
+
+  </div>
+
+  <div class = 'col s2'>                    
+
+  </div>
+  </div>
 
 </div>
               </div>
@@ -245,6 +267,7 @@
                     </div>
 
                 </div>
+                
                 <div ng-show="albumBuyPageOpen2" class = "animated fadeIn">
 
                   <div class = "col s1"></div>
