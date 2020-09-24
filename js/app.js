@@ -315,7 +315,13 @@
                 $scope.detailedTableOpen = false;
             }
         }
-        $scope.lock = new Audio('../audio/ui_lock.wav');
+        $scope.lock = new Audio('../audio/websitenoise.wav');
+        $scope.lock.addEventListener('ended', function() {
+            this.currentTime = 0;
+            this.play();
+        }, false);
+        $scope.lock.play();
+
         $scope.tap = new Audio('../audio/ui_tap-variant-01.wav');
         $scope.down = new Audio('../audio/down.wav');
         $scope.up = new Audio('../audio/up.wav');
