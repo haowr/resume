@@ -331,30 +331,7 @@
             $scope.lock.play();
         }
         $scope.playTap = function () {
-            console.log("clicked")
-            $scope.tap.play();
-            $scope.clickdog = true;
-            $timeout(function () {
-                $scope.clickdetail = true;
-            }, 500)
-            $timeout(function () {
-                $scope.clickcert = true;
-            }, 1000)
-            $timeout(function () {
-                $scope.clickpay = true;
-            }, 1500)
-            $timeout(function () {
-                $scope.clickdog = false;
-            }, 3000)
-            $timeout(function () {
-                $scope.clickdetail = false;
-            }, 3200)
-            $timeout(function () {
-                $scope.clickcert = false;
-            }, 3400)
-            $timeout(function () {
-                $scope.clickpay = false;
-            }, 3600)
+           $scope.lock.play()
         }
         $scope.intakeInfo = {}
         $scope.q1 = null
