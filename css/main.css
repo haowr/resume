@@ -142,6 +142,7 @@ background: linear-gradient(21deg, rgba(157,193,221,1) 0%, rgba(216,228,237,1) 8
   opacity:0;
 }
 @-webkit-keyframes rotating /* Safari and Chrome */ {
+
   from {
     -webkit-transform: rotate(0deg);
     -o-transform: rotate(0deg);
@@ -152,6 +153,7 @@ background: linear-gradient(21deg, rgba(157,193,221,1) 0%, rgba(216,228,237,1) 8
     -o-transform: rotate(360deg);
     transform: rotate(360deg);
   }
+  
 }
 
 	 #themo{
