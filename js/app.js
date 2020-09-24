@@ -67,13 +67,18 @@
         }
         $scope.openMusicPage = function(){
 
+            $scope.click.play()
+
             if(!$scope.musicPageOpen){
-                $scope.click.play()
+
                 $scope.musicPageOpen = true;
                 $scope.albumBuyPageOpen = false;
                 $scope.albumBuyPageOpen2 = false;
+
             }else{
+
             }
+
         }
         
         $scope.flameTrigger = function(){
@@ -157,6 +162,7 @@
         $scope.fadeInRight = false;
         $scope.fadeInRight2 = false;
         $scope.fadeInRight3 = false;
+
         $timeout(function () {
             $scope.fadeInRight = true;
 
@@ -234,6 +240,7 @@
         $scope.fadeOutBar = false;
         $scope.viewDetails = false;
         $scope.playSound = function () {
+
             $scope.tap.play();
 
         }
@@ -297,33 +304,12 @@
         }, 14000)
 
 
-
-        $timeout(function () {
-            //   $scope.fadeInBar = false;
-            //   $scope.fadeOutBar = true;
-        }, 5000)
-        $timeout(function () {
-            //  $scope.barChart = false;
-        }, 5500)
-        // $scope.hillChartTiming = function(){
-        // $timeout(function () {
-        //$scope.fadeInHill = true;
-        //$scope.hillChart = true;
-        //},6000)
-        //$timeout(function () {
-        //  $scope.fadeInHill = false;
-        // $scope.fadeOutHill = true;
-        // },2000)
-        // $timeout(function(){
-        //    $scope.hillChart = false;
-        //},2500)
-
-        //$scope.hillChartTiming()
-
         $scope.onClick = function (points, evt) {
             console.log(points, evt);
         };
+
         $scope.datasetOverride = [{ yAxisID: 'y-axis-1' }, { yAxisID: 'y-axis-2' }];
+
         $scope.options = {
 
             scales: {
@@ -350,6 +336,7 @@
             email: "",
             password: ""
         }
+
         $scope.openDetailedTable = function () {
             if (!$scope.detailedTableOpen) {
                 $scope.detailedTableOpen = true;
@@ -357,50 +344,72 @@
                 $scope.detailedTableOpen = false;
             }
         }
+
         $scope.lock = new Audio('../audio/websitenoise.wav');
         $scope.click = new Audio('../audio/clickohrha.wav')
+
         $scope.lock.addEventListener('ended', function() {
+
             this.currentTime = 0;
             this.play();
-        }, false);
-        $scope.lock.play();
 
-        $scope.tap = new Audio('../audio/ui_tap-variant-01.wav');
-        $scope.down = new Audio('../audio/down.wav');
-        $scope.up = new Audio('../audio/up.wav');
+        }, false);
+
+        //$scope.lock.play();
+
+        $scope.tap      = new Audio('../audio/ui_tap-variant-01.wav');
+        $scope.down     = new Audio('../audio/down.wav');
+        $scope.up       = new Audio('../audio/up.wav');
         $scope.generate = new Audio('../audio/generate.wav');
+
         $scope.playLock = function () {
+
             console.log("clicked")
             $scope.lock.play();
+
         }
         $scope.playTap = function () {
+
            $scope.lock.play()
+           
         }
-        $scope.intakeInfo = {}
-        $scope.q1 = null
-        $scope.q2 = null
-        $scope.results = []
-        $scope.loading = false;
-        $scope.showResults = false;
-        $scope.noDifference = false;
-        $scope.pulseSelect = false;
-        $scope.rollRight = false;
-        $scope.rocketLaunched = false;
-        $scope.launchRocket = function () {
+
+
+        $scope.intakeInfo       = {}
+        $scope.q1               = null
+        $scope.q2               = null
+        $scope.results          = []
+        $scope.loading          = false;
+        $scope.showResults      = false;
+        $scope.noDifference     = false;
+        $scope.pulseSelect      = false;
+        $scope.rollRight        = false;
+        $scope.rocketLaunched   = false;
+
+        $scope.launchRocket     = function () {
+
             console.log("clicked")
+
             if (!$scope.rocketLaunched) {
+
                 $scope.rocketLaunched = true
+
             } else {
+
                 $scope.rocketLaunched = false
 
             }
+
         }
         //RESUME CODE //
-        $scope.shineBright = false;
-        $scope.shineDesigns = false;
-        $scope.qlh = false;
-        $scope.rose = false;
+
+        $scope.shineBright      = false;
+        $scope.shineDesigns     = false;
+        $scope.qlh              = false;
+        $scope.rose             = false;
+
         $scope.openExperience3 = function () {
+            
             if ($scope.rose) {
 
                 $scope.rose = false;
