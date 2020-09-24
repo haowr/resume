@@ -67,7 +67,7 @@
         }
         $scope.openMusicPage = function(){
 
-            $scope.click.play()
+//$scope.click.play()
 
             if(!$scope.musicPageOpen){
 
