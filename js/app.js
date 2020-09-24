@@ -42,13 +42,15 @@
             if($scope.flameOn){
                 $scope.flameOn = false;
                 $scope.flameOff = true;
+             
                 
                 console.log("on")
+                $timeout(function(){
 
-            }else{
-                $scope.flameOff = false;
-                $scope.flameOn = true;
-                console.log("off")
+                    $scope.flameOn= true;
+                    $scope.flameOff = false;
+                },300)
+
             }
             if($scope.flameOn2){
                 $scope.flameOn2 = false;
@@ -109,6 +111,7 @@
 
         $interval(function(){
             $scope.flameTrigger()
+
             console.log(":)")
         },5000)
    
