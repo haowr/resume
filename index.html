@@ -41,7 +41,7 @@
 </head>
 
 
-<body>
+<body class="background">
 <!--
   <div class="navbar-fixed" style="z-index:100000; ">
 
@@ -166,7 +166,7 @@
 
                   <a ng-click="openMusicPage()" href="#" class="white-text">
 
-                       <p class = "montserrat  flow-text white-text"  > MUSIC</p>
+                       <p class = "montserrat  flow-text white-text" style="text-decoration:underline;"  > MUSIC</p>
 
                   </a>
 
@@ -175,7 +175,7 @@
 
                   <a ng-click="playTap()" href="#" class="white-text">
 
-                      <p class = "montserrat  flow-text white-text"  > ART</p>
+                      <p class = "montserrat  flow-text white-text"style="text-decoration:underline;"   > ART</p>
 
                   </a>
 
@@ -184,7 +184,7 @@
 
                   <a ng-click="playTap()" href="#" class="white-text">
 
-                      <p class = "montserrat  flow-text white-text"  > FASHION</p>
+                      <p class = "montserrat  flow-text white-text"style="text-decoration:underline;"   > FASHION</p>
 
                   </a>
 
@@ -288,68 +288,7 @@
 
           </div>
       </div>
-      <div class="row background hide-on-med-and-up "  style="height:100vh;">
-
-        <div class="row">
-  
-            <div class = "col s12">
-  
-              <div class = "row">
-  
-                <div class = "row"></div>
-                <div class = "row"></div>
-  
-  
-                <div class = "col s12 center-align">
-  
-                  <object class="responsive-img" id="svg-object" data='./images/owr.svg' style="height:200px; width:200px; opacity:1;"type="image/svg+xml"></object>
-                  <div class = "row">
-                  <div class = "col s4"></div>
-                  <div class = "col s4" style="border:2px solid white;"></div>
-                  <div class = "col s4"></div>
-                  </div>
-                  <div class = "row">
-  
-                    <div class = "col s4">
-  
-                    </div>
-                    <div class = "col s4">
-                    </div>
-                    <div class = "col s4">
-                      
-                    </div>
-  
-                  </div>
-  
-                      <div class = "col s12 center-align">
-                        <p class = "montserrat  flow-text white-text"  > OHRHA</p>
-                        <img src='./images/1.jpg' class="responsive-img">
-                        <img src='./images/2.jpg' class="responsive-img">
-                        <img src='./images/3.jpg' class="responsive-img">
-                        <img src='./images/4.jpg' class="responsive-img">
-                        <img src='./images/5.jpg' class="responsive-img">
-                        <img src='./images/6.jpg' class="responsive-img">
-
-  
-  
-                  </div>
-                  </div>
-  
-                  
-                </div>
-                <div class = "col s12   animated" ng-class="{'fadeIn': flameOn, 'fadeOut': flameOff}" style="height:100vh;">
-          
-                  
-                </div>
-           
-              
-             
-  
-              </div>
-  
-            </div>
-        </div>
-    </div>
+ 
 
         <script class="hide-on-med-and-down">
           $('.scrollspy').scrollSpy({
