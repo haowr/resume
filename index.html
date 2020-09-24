@@ -141,15 +141,10 @@
               <div class = "row"></div>
               <div class = "row"></div>
               <div class = "row"></div>
-           
-       
-            
-   
-
 
               <div class = "col s12 center-align">
 
-                <object ng-click="playTap()" class="responsive-img animated slow" id="svg-object" data='./images/owr.svg' ng-class="{'fadeIn': flameOn, 'fadeOut': flameOff}"style="height:200px; width:200px; opacity:1;"type="image/svg+xml"></object>
+                <object ng-click="playTap()" class="responsive-img animated slow" id="svg-object" data='./images/owr.svg' style="height:200px; width:200px; opacity:1;"type="image/svg+xml"></object>
                <!-- <object ng-click="playTap()" class="responsive-img animated slow" id="svg-object" data='./images/owredblood.svg'ng-class="{'fadeIn': flameOff, 'fadeOut': flameOn}" style="position:absolute; left:41.5%;height:200px;width:200px; opacity:1;"type="image/svg+xml"></object>
                -->
                 <div class = "row"></div>
@@ -169,7 +164,7 @@
 
                 <div class = "col s4 center-align">
 
-                  <a ng-click="playTap()" href="#" class="white-text">
+                  <a ng-click="openMusicPage()" href="#" class="white-text">
 
                        <p class = "montserrat  flow-text white-text"  > MUSIC</p>
 
@@ -196,7 +191,37 @@
                 </div>
                 <div class = "row"></div>
 
+
                 <div class = "animated fadeIn">
+
+<div class = "row" ng-show="musicPageOpen">
+
+                  <div class = 'col s2'>
+
+                  </div>
+                  <div class = 'col s2' ng-click="openAlbumBuy(1)">
+                    <img src="./images/vv.jpg" class="responsive-img" > 
+
+                  </div>
+                  <div class = 'col s2' ng-click="openAlbumBuy(2)">
+                    <img src="./images/vvback.jpg" class="responsive-img" > 
+
+                  </div>
+                  <div class = 'col s2'>                    
+                    <img src="./images/vv.jpg" class="responsive-img" > 
+                  </div>
+                  <div class = 'col s2'>
+
+                    <img src="./images/vv.jpg" class="responsive-img" > 
+
+                  </div>
+                  <div class = 'col s2'>                    
+
+                  </div>
+
+</div>
+              </div>
+                <div ng-show="albumBuyPageOpen" class = "animated fadeIn">
 
                     <div class = "col s1"></div>
                     <div class = "col s6 left-align">                  
@@ -220,6 +245,30 @@
                     </div>
 
                 </div>
+                <div ng-show="albumBuyPageOpen2" class = "animated fadeIn">
+
+                  <div class = "col s1"></div>
+                  <div class = "col s6 left-align">                  
+                    <img src="./images/vvback.jpg" class="responsive-img" > 
+                  </div>
+                  <div class = "col s5 left-align">
+                    <div class = 'col s12 left-align'>
+
+                      <p class = "montserrat" style="font-size:30px;">LP 001 - It was the worst of times</p>
+                      <p class = "montserrat" style="font-size:30px;">It was the worst of times</p>
+                      <p class = "montserrat" style="font-size:30px;">Record/Vinyl + Digital Album</p>
+                      <o class = "montserrat" class ="flow-text">Wrap-around heavy weight archival letterpress cover with additional pressed details inside and out, archival art print, and several smaller archival text fragment prints
+
+                        Includes unlimited streaming of Grid Of Points via the free Bandcamp app, plus high-quality download in MP3, FLAC and more.</o>
+                        <br>
+                        <br>
+                        <a class="btn-flat red ">Button</a>
+
+                    </div>
+
+                  </div>
+
+              </div>
 
                 </div>
     

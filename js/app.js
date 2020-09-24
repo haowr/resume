@@ -36,6 +36,45 @@
         $scope.right = false;
         $scope.down = false;
         $scope.left= false;
+        $scope.musicPageOpen = true;    
+        $scope.albumBuyPageOpen = false;
+        $scope.albumBuyPageOpen2 = false;
+
+        $scope.openAlbumBuy = function(album){
+
+            if(album === 1){
+
+                if(!$scope.albumBuyPageOpen){
+
+                    $scope.albumBuyPageOpen = true;
+                    $scope.musicPageOpen = false;
+    
+                }
+
+            }else{
+
+                if(!$scope.albumBuyPageOpen2){
+
+                    $scope.albumBuyPageOpen2 = true;
+                    $scope.musicPageOpen = false;
+    
+                }
+
+            }
+   
+
+
+        }
+        $scope.openMusicPage = function(){
+
+            if(!$scope.musicPageOpen){
+                $scope.click.play()
+                $scope.musicPageOpen = true;
+                $scope.albumBuyPageOpen = false;
+                $scope.albumBuyPageOpen2 = false;
+            }else{
+            }
+        }
         
         $scope.flameTrigger = function(){
 
@@ -319,6 +358,7 @@
             }
         }
         $scope.lock = new Audio('../audio/websitenoise.wav');
+        $scope.click = new Audio('../audio/clickohrha.wav')
         $scope.lock.addEventListener('ended', function() {
             this.currentTime = 0;
             this.play();
