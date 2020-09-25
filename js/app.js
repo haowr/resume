@@ -45,6 +45,39 @@
         $scope.albumBuyPageOpen2 = false;
         $scope.albumBuyPageOpen3 = false;
         $scope.albumBuyPageOpen4 = false;
+        $scope.volumeOn = false;
+        $scope.click = new Audio('../audio/clickohrha.wav')
+        $scope.lock = new Audio('../audio/websitenoise.wav');
+        $scope.lock.addEventListener('ended', function() {
+
+            this.currentTime = 0;
+            this.play();
+
+        }, false);   
+
+
+        $scope.toggleMusic = function(){
+
+            if(!$scope.volumeOn){
+                console.log("Clicked")
+
+            
+                $scope.volumeOn = true;
+                $scope.lock.play()
+         
+
+
+
+
+            }else{
+
+                $scope.volumeOn = false;
+                $scope.lock.pause()
+
+                
+
+                }
+        }
         $scope.openAlbumBuy = function(album){
  
 
@@ -414,15 +447,7 @@
             }
         }
 
-        $scope.lock = new Audio('../audio/websitenoise.wav');
-        $scope.click = new Audio('../audio/clickohrha.wav')
 
-        $scope.lock.addEventListener('ended', function() {
-
-            this.currentTime = 0;
-            this.play();
-
-        }, false);
 
         //$scope.lock.play();
 
