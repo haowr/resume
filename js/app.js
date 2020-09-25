@@ -32,6 +32,10 @@
         $scope.flameOff4 = false;
         $scope.flameOn5 = true;
         $scope.flameOff5 = false;
+        $scope.whiteVisable = true;
+        $scope.redVisable= false;
+        $scope.flameOffRed = false;
+        $scope.flameOnRed = false;
         $scope.up = true;
         $scope.right = false;
         $scope.down = false;
@@ -41,11 +45,18 @@
         $scope.albumBuyPageOpen2 = false;
 
         $scope.openAlbumBuy = function(album){
+ 
 
             if(album === 1){
 
                 if(!$scope.albumBuyPageOpen){
-
+                    $scope.flameOff= true;
+                    $scope.flameOffRed = false;
+                    $timeout(function(){
+                        $scope.whiteVisable = false;
+                        $scope.redVisable = true;
+                        $scope.flameOnRed = true;
+                    },1000)
                     $scope.albumBuyPageOpen = true;
                     $scope.musicPageOpen = false;
     
@@ -54,7 +65,13 @@
             }else{
 
                 if(!$scope.albumBuyPageOpen2){
-
+                    $scope.flameOff= true;
+                    //$scope.flameOff = true;
+                    $timeout(function(){
+                        $scope.whiteVisable = false;
+                        $scope.redVisable = true;
+                        $scope.flameOnRed = true;
+                    },1000)
                     $scope.albumBuyPageOpen2 = true;
                     $scope.musicPageOpen = false;
     
@@ -67,10 +84,17 @@
         }
         $scope.openMusicPage = function(){
 
-//$scope.click.play()
-
+       
             if(!$scope.musicPageOpen){
+                $scope.flameOffRed= true;
+        $scope.flameOff = false;
+                $timeout(function(){
+                    $scope.redVisable = false;
+                    
+                    $scope.flameOn = true;
 
+                    $scope.whiteVisable = true;
+                },1000)
                 $scope.musicPageOpen = true;
                 $scope.albumBuyPageOpen = false;
                 $scope.albumBuyPageOpen2 = false;
@@ -154,7 +178,7 @@
         }
 
         $interval(function(){
-            $scope.flameTrigger()
+            //$scope.flameTrigger()
 
             console.log(":)")
         },5000)
