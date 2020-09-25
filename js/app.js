@@ -67,7 +67,7 @@
 
                 if(!$scope.albumBuyPageOpen2){
                     $scope.flameOff= true;
-                    //$scope.flameOff = true;
+                    $scope.flameOffRed = false;
                     $timeout(function(){
                         $scope.whiteVisable = false;
                         $scope.redVisable = true;
@@ -82,7 +82,12 @@
 
                 if(!$scope.albumBuyPageOpen3){
                     $scope.flameOff= true;
-                    //$scope.flameOff = true;
+                    $scope.flameOffRed = false;
+                    $timeout(function(){
+                        $scope.whiteVisable = false;
+                        $scope.redVisable = true;
+                        $scope.flameOnRed = true;
+                    },1000)
                     $timeout(function(){
                         $scope.whiteVisable = false;
                         $scope.redVisable = true;
@@ -97,7 +102,12 @@
 
                 if(!$scope.albumBuyPageOpen4){
                     $scope.flameOff= true;
-                    //$scope.flameOff = true;
+                    $scope.flameOffRed = false;
+                    $timeout(function(){
+                        $scope.whiteVisable = false;
+                        $scope.redVisable = true;
+                        $scope.flameOnRed = true;
+                    },1000)
                     $timeout(function(){
                         $scope.whiteVisable = false;
                         $scope.redVisable = true;
