@@ -8,13 +8,8 @@
     app.config(function ($httpProvider) {
 
 
-        console.log("Angular.js loaded")
-
-
-
-
-
     });
+
     app.controller('mainCtrl', ['$http', '$scope', '$timeout',  '$interval', '$window', function ($http, $scope, $timeout, $interval, $window) {
 
 
@@ -82,7 +77,6 @@
         $scope.moon = function(phase){
             $scope.phase = phase;
 
-            console.log("oy")
             if($scope.phase == 'blood'){
 
                 $scope.flameOff= true;
