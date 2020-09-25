@@ -43,7 +43,8 @@
         $scope.musicPageOpen = true;    
         $scope.albumBuyPageOpen = false;
         $scope.albumBuyPageOpen2 = false;
-
+        $scope.albumBuyPageOpen3 = false;
+        $scope.albumBuyPageOpen4 = false;
         $scope.openAlbumBuy = function(album){
  
 
@@ -62,7 +63,7 @@
     
                 }
 
-            }else{
+            }else if(album === 2){
 
                 if(!$scope.albumBuyPageOpen2){
                     $scope.flameOff= true;
@@ -76,6 +77,37 @@
                     $scope.musicPageOpen = false;
     
                 }
+
+            }else if(album ===3){
+
+                if(!$scope.albumBuyPageOpen3){
+                    $scope.flameOff= true;
+                    //$scope.flameOff = true;
+                    $timeout(function(){
+                        $scope.whiteVisable = false;
+                        $scope.redVisable = true;
+                        $scope.flameOnRed = true;
+                    },1000)
+                    $scope.albumBuyPageOpen2 = true;
+                    $scope.musicPageOpen = false;
+    
+                }
+
+            }else if(album  === 4){
+
+                if(!$scope.albumBuyPageOpen4){
+                    $scope.flameOff= true;
+                    //$scope.flameOff = true;
+                    $timeout(function(){
+                        $scope.whiteVisable = false;
+                        $scope.redVisable = true;
+                        $scope.flameOnRed = true;
+                    },1000)
+                    $scope.albumBuyPageOpen2 = true;
+                    $scope.musicPageOpen = false;
+    
+                }
+
 
             }
    
@@ -98,6 +130,9 @@
                 $scope.musicPageOpen = true;
                 $scope.albumBuyPageOpen = false;
                 $scope.albumBuyPageOpen2 = false;
+                $scope.albumBuyPageOpen3 = false;
+                $scope.albumBuyPageOpen4 = false;
+                
 
             }else{
 
