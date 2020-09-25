@@ -79,7 +79,8 @@
                 }
         }
         $scope.openAlbumBuy = function(album){
- 
+            $('html, body').animate({ scrollTop: 0 }, 'fast');
+
 
             if(album === 1){
 
