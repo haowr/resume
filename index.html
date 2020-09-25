@@ -153,9 +153,12 @@
               <div class = "row"></div>
 
               <div class = "col s12 center-align">
-
-                <object ng-if="whiteVisable"  class="responsive-img animated slw" id="svg-object" data='./images/owr.svg'  ng-class="{'fadeIn': flameOn, 'fadeOut': flameOff}"style="height:200px; width:200px; "type="image/svg+xml"></object>
-                <object ng-if="redVisable"  class="responsive-img animated " id="svg-object" data='./images/owredblood.svg'ng-class="{'fadeIn': flameOnRed, 'fadeOut': flameOffRed}" style="height:200px;width:200px;"type="image/svg+xml"></object>
+              <div  class="col s12"ng-click="moon('blood')" >
+                <object ng-if="whiteVisable"  class="responsive-img animated slow" id="svg-object" data='./images/owr.svg'  ng-class="{'fadeIn': flameOn, 'fadeOut': flameOff}"style="height:200px; width:200px; "type="image/svg+xml"></object>
+              </div>
+              <div class="col s12" ng-click="moon('full')" >
+                <object ng-if="redVisable" class="responsive-img animated slow" id="svg-object" data='./images/owredblood.svg'ng-class="{'fadeIn': flameOnRed, 'fadeOut': flameOffRed}" style="height:200px;width:200px;"type="image/svg+xml"></object>
+              </div>
                 <div class = "row"></div>
                 <div class = "row"></div>
                 <div class = "row"></div>

@@ -78,6 +78,33 @@
 
                 }
         }
+        $scope.moon = function(phase){
+            $scope.phase = phase;
+
+            console.log("oy")
+            if($scope.phase == 'blood'){
+
+                $scope.flameOff= true;
+                $scope.flameOffRed = false;
+                $timeout(function(){
+                    $scope.whiteVisable = false;
+                    $scope.redVisable = true;
+                    $scope.flameOnRed = true;
+                },1000)                
+            }else{
+$scope.phase = phase
+                $scope.flameOffRed= true;
+                $scope.flameOff = false;
+                        $timeout(function(){
+                            $scope.redVisable = false;
+                            
+                            $scope.flameOn = true;
+        
+                            $scope.whiteVisable = true;
+                        },1000)
+            }
+
+        }
         $scope.openAlbumBuy = function(album){
             $('html, body').animate({ scrollTop: 0 }, 'fast');
 
@@ -255,12 +282,21 @@
 
 
         }
+        $scope.phase = 'blood'
 
         $interval(function(){
             //$scope.flameTrigger()
+            if($scope.phase == 'blood'){
+                $scope.moon('full')
+                console.log('%c FULL MOON! ', 'background: #222; color: white');
 
+            }else{
+                $scope.moon('blood')
+                console.log('%c BLOOD MOON! ', 'background: #222; color: #7f2121');
+
+            }
             console.log(":)")
-        },5000)
+        },60000)
    
         $scope.fadeInRight = false;
         $scope.fadeInRight2 = false;
