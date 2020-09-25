@@ -21,6 +21,7 @@
         $timeout(function () {
             $scope.loaded = true;
         }, 500)
+        console.log('%c YOU"RE NOT SUPPOSED TO BE HERE!!! ', 'background: #222; color: #7f2121');
 
         $scope.flameOn = true;
         $scope.flameOff = false;
@@ -282,7 +283,7 @@ $scope.phase = phase
 
 
         }
-        $scope.phase = 'blood'
+        $scope.phase = 'clud'
 
         $interval(function(){
             //$scope.flameTrigger()
@@ -295,7 +296,6 @@ $scope.phase = phase
                 console.log('%c BLOOD MOON! ', 'background: #222; color: #7f2121');
 
             }
-            console.log(":)")
         },60000)
    
         $scope.fadeInRight = false;
@@ -437,12 +437,7 @@ $scope.phase = phase
             }, 13000)
 
         }
-        $scope.fadeOutWebChart()
-        $interval(function () {
-            $scope.fadeOutWebChart()
-        }, 14000)
-
-
+       
         $scope.onClick = function (points, evt) {
             console.log(points, evt);
         };
@@ -1006,55 +1001,8 @@ $scope.phase = phase
 
 
         }
-        $scope.serverSwitch = function () {
-            $interval(function () {
-
-                if ($scope.largeStorage) {
-                    $scope.smStorage = true;
-                    $scope.largeStorage = false;
-
-                } else if ($scope.medStorage) {
-                    $scope.largeStorage = true;
-                    $scope.medStorage = false;
-                } else if ($scope.smStorage) {
-                    $scope.medStorage = true;
-                    $scope.smStorage = false;
-                }
-                if ($scope.threexServer) {
-                    $scope.onexServer = false;
-                    $scope.threexServer = false;
-                    $scope.twoxServer = true;
-
-                }
-                else if ($scope.twoxServer) {
-                    $scope.threexServer = false;
-                    $scope.twoxServer = false;
-                    $scope.onexServer = true;
-                    console.log(2)
-                }
-                else if ($scope.onexServer) {
-                    $scope.twoxServer = false;
-                    $scope.onexServer = false;
-                    $scope.threexServer = true;
-
-                }
-            }, 2000)
-        }
-        $scope.serverSwitch()
- 
-        $scope.checkProgress = function () {
-            $scope.progress = 0;
-            $interval(function () {
-                if ($scope.progress < 86) {
-                    $scope.progress = $scope.progress + 1;
-                    console.log("og")
-                } else {
-                    $timeout(function () {
-
-                    }, 3000)
-                }
-            }, 50)
-        }
+      
+    
 
    
         $scope.nightModeToggle = function () {
