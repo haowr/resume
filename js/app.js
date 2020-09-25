@@ -88,7 +88,7 @@
                         $scope.redVisable = true;
                         $scope.flameOnRed = true;
                     },1000)
-                    $scope.albumBuyPageOpen2 = true;
+                    $scope.albumBuyPageOpen3 = true;
                     $scope.musicPageOpen = false;
     
                 }
@@ -103,7 +103,7 @@
                         $scope.redVisable = true;
                         $scope.flameOnRed = true;
                     },1000)
-                    $scope.albumBuyPageOpen2 = true;
+                    $scope.albumBuyPageOpen4 = true;
                     $scope.musicPageOpen = false;
     
                 }
@@ -132,7 +132,7 @@
                 $scope.albumBuyPageOpen2 = false;
                 $scope.albumBuyPageOpen3 = false;
                 $scope.albumBuyPageOpen4 = false;
-                
+
 
             }else{
 
