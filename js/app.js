@@ -10,7 +10,7 @@
 
     });
 
-    app.controller('mainCtrl', ['$http', '$scope', '$timeout',  '$interval', '$window', function ($http, $scope, $timeout, $interval, $window) {
+    app.controller('mainCtrl', ['$http', '$scope', '$timeout',  '$interval', '$window', function ($http, $scope, $timeout, $interval, $window, $rootScope) {
 
 
         $timeout(function () {
@@ -382,10 +382,14 @@ $scope.phase = phase
         $scope.fadeInBar = false;
         $scope.fadeOutBar = false;
         $scope.viewDetails = false;
-        $scope.playSound = function () {
 
+        $scope.playSound = function () {
+            console.log("CLICKEE")
             $scope.tap.play();
 
+        }
+        $scope.test = function(){
+            console.log("Test message")
         }
         $scope.testButton = function () {
             console.log("clickeds")

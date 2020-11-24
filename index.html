@@ -1,4 +1,4 @@
-<html ng-controller="mainCtrl as main" ng-app="store">
+<html  ng-app="store">
 
 <head>
 
@@ -137,7 +137,7 @@
           
           
         <video *ngIf="homePageOpen"[ngClass]="{'fadeIn':homePageOpen"}  class="animated fadeIn" style="position:absolute ;left:0%; z-index:0;" id="videoBG"  autoplay muted loop>
-          <source src="./images/ooo.mp4" type="video/mp4">
+          <source src="./images/chapel.mp4" type="video/mp4">
       </video>
       <div class = "col s12 ">
         <br>
@@ -205,7 +205,7 @@
         </div><div class ="row">
           
         </div>
-        <div class = "col s3 right-align">         <a href="#" class="white-text" style="position: absolute;left:67%;" > <h4 class="montserrat red-text small" style=" font-size:30px;" >MUSIC</h4></a>
+        <div class = "col s3 right-align">         <a href="#" ng-click="toggleMusic()" class="white-text" style="position: absolute;left:67%;" > <h4 class="montserrat red-text small" style=" font-size:30px;" >MUSIC</h4></a>
 
         </div>
         <div class = "col s3 right-align">         <a href="#" class="white-text"style="position: absolute;left:90%;" > <h4 class="montserrat red-text small" style=" font-size:30px;" style=" font-size:30px;">DESIGN</h4></a>
@@ -573,32 +573,7 @@
 <script>
   window.onscroll = function () { scrollFunction() };
 
-  function scrollFunction() {
-
-    if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
-
-      document.getElementById("menu").style.padding = "00px 0px";
-      document.getElementById("menu").style.height = "150px";
-      document.getElementById("menu").style.position = "fixed";
-      document.getElementById("links3").classList.add('fadeOut')
-      document.getElementById("links2").classList.add('fadeOut')
-      document.getElementById("links").classList.add('fadeOut')
-
-    } else {
-
-      document.getElementById("menu").style.height = "250px";
-      document.getElementById("links").style.display = "inline";
-      document.getElementById("links2").style.display = "inline";
-      document.getElementById("links3").style.display = "inline";
-      document.getElementById("links3").classList.remove('fadeOut')
-      document.getElementById("links2").classList.remove('fadeOut')
-      document.getElementById("links").classList.remove('fadeOut')
-      document.getElementById("links3").classList.add('fadeIn')
-      document.getElementById("links2").classList.add('fadeIn')
-      document.getElementById("links").classList.add('fadeIn')
-
-    }
-  }
+ 
   $(document).ready(function () {
 
     $(".button-collapse").sideNav({ closeOnClick: true });
