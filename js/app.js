@@ -17,7 +17,7 @@
             $scope.loaded = true;
         }, 500)
         console.log('%c YOU"RE NOT SUPPOSED TO BE HERE!!! ', 'background: #222; color: #7f2121');
-
+        $scope.homePageOpen = true;
         $scope.flameOn = true;
         $scope.flameOff = false;
         $scope.flameOn2 = true;
@@ -51,7 +51,7 @@
 
         }, false);   
 
-
+  
         $scope.toggleMusic = function(){
 
             if(!$scope.volumeOn){
@@ -99,6 +99,16 @@ $scope.phase = phase
                         },1000)
             }
 
+        }
+
+        $scope.openHomePage = function(){
+            console.log("clicked")
+            if(!$scope.openHomePage){
+                $scope.openHomePage = true;
+
+            }else{
+                $scope.openHomePage = false;
+            }
         }
         $scope.openAlbumBuy = function(album){
             $('html, body').animate({ scrollTop: 0 }, 'fast');
