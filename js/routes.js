@@ -8,7 +8,6 @@
         //Only providers in config phase... no $rootScope or any other instances...
 
 
-
         $routeProvider
 
         .when('/pricing', {
@@ -172,7 +171,7 @@
                 }
             })
             .when('/', {
-                templateUrl: '../homey.html',
+                templateUrl: '../index.html',
                 name: "SHINE BRIGHT COACHING | FORMS",
                 controller: "mainCtrl",
                 controllerAs: 'main',
