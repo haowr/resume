@@ -19,7 +19,7 @@ console.log("OY")
         $scope.lightsPageOpen = false;
         $scope.zoomPageOpen = false;
 
-        $scope.audio = new Audio('../audio/ui_tap-variant-01.wav')
+        $scope.audio = new Audio('../audio/clickohrha.wav')
 
 
         $scope.closeZoomPage = function(){
