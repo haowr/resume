@@ -3,7 +3,7 @@
 (function () {
 
 
-    var app = angular.module('store', [ 'chart.js']);
+    var app = angular.module('store', [ 'chart.js','appRoutes']);
 
 
 
@@ -16,11 +16,25 @@ console.log("OY")
 
         $scope.chapelOpen = true;
         $scope.soundOpen = false;
+        $scope.shopOpen = false;
         $scope.lightsPageOpen = false;
+        $scope.contactPageOpen = false;
         $scope.zoomPageOpen = false;
 
         $scope.audio = new Audio('../audio/ui_tap-variant-01.wav')
+        $scope.bgaudio = new Audio('../images/web.wav')
+        $timeout(function(){
 
+            //$scope.bgaudio.play()
+
+
+        },200)
+        $scope.openShopPage = function(){
+
+            //$scope.bgaudio.play()
+
+        }
+        $scope.openShopPage()
 
         $scope.closeZoomPage = function(){
             $scope.audio.play()
@@ -33,32 +47,104 @@ $scope.zoomPageOpen = false;
 
             }
         }
-        $scope.openZoomPage = function(){
 
+        $scope.contactPageOpen  = false;
+        $scope.soundPageOpen    =   false;
+        $scope.lightPageOpen    = false;
+        $scope.homePageOpen     = true;
+
+        $scope.openContactPage     = function(){
+
+                if(!$scope.contactPageOpen){
+
+                    $scope.contactPageOpen  = true;
+                    $scope.homePageOpen = false;
+                    $scope.soundOpen    = false;
+                    $scope.lightPageOpen    = false;
+
+                }
 
         }
-        $scope.openLightsPage = function(){
+        $scope.openShopPage = function(){
 
-            console.log("OPen")
+
             $scope.audio.play()
-            if(!$scope.chapelOpen){
 
-                if( $scope.soundOpen){
-                    $scope.chapelOpen = true;
 
+                if( !$scope.shopOpen){
+
+                    $scope.homePageOpen = false;
                     $scope.soundOpen = false;
+                    $scope.shopOpen = true;
+
+                    console.log("should run")
+
+                }
+
+        }
+        $scope.openSoundPage = function(){
+
+
+            $scope.audio.play()
+            if(!$scope.soundOpen){
+
+                if( $scope.shopOpen){
+
+                    $scope.homePageOpen = true;
+                    $scope.shopOpen = false;
 
                 }
 
             }else{
 
-                if( !$scope.soundOpen){
-                    $scope.chapelOpen = false;
+                if( !$scope.shopOpen){
 
-                    $scope.soundOpen = true;
+                    $scope.homePageOpen = false;
+                    $scope.shopOpen = true;
+
                     console.log("should run")
 
                 }
+
+            }
+
+        }
+        $scope.openSoundPage = function(){
+
+
+            //$scope.audio.play()
+            console.log('clicked')
+            if(!$scope.soundOpen){
+
+                    $scope.soundOpen = true;
+                    $scope.homePageOpen = false;
+                    $scope.contactPageOpen = false;
+
+
+            }
+
+        }
+        $scope.openLightsPage = function(){
+
+          //  $scope.audio.play()
+            if(!$scope.soundOpen){
+
+               // $scope.lightsPageOpen = true;
+                $scope.soundOpen = true;
+                $scope.contactPageOpen = false;
+                $scope.homePageOpen = false;
+
+            }
+
+        }
+        $scope.openHomePage = function(){
+
+
+            if(!$scope.homePageOpen){
+
+                $scope.homePageOpen = true;
+                $scope.contactPageOpen = false;
+                $scope.soundOpen = false;
 
             }
 

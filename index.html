@@ -42,58 +42,31 @@
 </head>
 
 
-<body class="background" >
-
-  <video ng-if="chapelOpen" ng-click="test()" class="animated fadeIn" style="position: fixed;
-  ;left:0%; z-index:0;" id="videoBG"  autoplay muted loop>
+<video ng-if="homePageOpen" ng-click="test()" class="animated fadeIn" style="position: fixed;
+  ;left:0; top:0" id="videoBG"  autoplay muted loop>
    <source src="./images/chapel.mp4" type="video/mp4">
  </video>  
- <video ng-if="soundOpen" ng-click="test()" class="animated fadeIn" style="position:fixed ;left:0; top:0; z-index:0;" id="videoBG"  autoplay muted loop>
+ <video ng-if="soundOpen" ng-click="test()" class="animated fadeIn" style="position:fixed ;left:0; top:0; " id="videoBG"  autoplay muted loop>
    <source src="./images/eyelong.mp4" type="video/mp4">
  </video>
- <video ng-if="shopOpen" ng-click="test()" class="animated fadeIn" style="position:fixed ;left:0; top:0;z-index:0;" id="videoBG"  autoplay muted loop>
-   <source src="./images/ooo.mp4" type="video/mp4">
+ <video ng-if="contactPageOpen" ng-click="test()" class="animated fadeIn" style="position:fixed ;left:0; top:0;" id="videoBG"  autoplay muted loop>
+   <source src="./images/mon.mp4" type="video/mp4">
  </video>
+
+<body class="background" >
+
+  
  
   <div class="row background hide-on-small-only " >
 
 
-    <div ng-if="soundOpen" class="row">
+
+ 
+    <div ng-if="contactPageOpen && !soundOpen" class="row">
   
       <div class = "col s12 center-align animated fadeIn"  >
 
-        <div ng-if="!zoomPageOpen">
-              <img  class="responsive-img"  ng-click="closeZoomPage()" style = "width:280px; height:160px;position:absolute; z-index:1; top:700;  border-radius:5%;"src="./images/ii.png">
-        
-
-              <img  class="responsive-img"  ng-click="closeZoomPage()" style = "width:280px; height:160px;position:absolute; z-index:1; top:700;right:50; border-radius:5%;"src="./images/ii.png">
-        
-
-              <img  class="responsive-img"  ng-click="closeZoomPage()" style = "width:280px; height:160px;position:absolute; z-index:1; top:700; right: 520; border-radius:5%;"src="./images/ii.png">
-             
-
-              <img  class="responsive-img"  ng-click="closeZoomPage()" style = "width:280px; height:160px;position:absolute; z-index:1;top:500; border-radius:5%;"src="./images/ii.png">
-        
-        
-              <img  class="responsive-img"  ng-click="closeZoomPage()" style = "width:280px; height:160px;position:absolute; z-index:1;top:500;border-radius:5%; right:50;"src="./images/ii.png">
-        
-        
-              <img  class="responsive-img"  ng-click="closeZoomPage()" style = "width:280px; height:160px; position:absolute; z-index:1;top:500;border-radius:5%; right:520;"src="./images/ii.png">
-        
-    
-        </div>
-        <div ng-if="zoomPageOpen">
-        
-          
-          <i class = "material-icons" ng-click="closeZoomPage()" style="font-size:40px;position:absolute; z-index:1; top:380;right:50">clear</i>
-
-          <img  class="responsive-img" style = "width:1250px; height:800px;position:absolute; z-index:1; top:450;right:50;"src="./images/ii.png">
-    
-
-        
-    
-
-    </div>
+   
     <div class = "col s12 animated fadeIn ">
       
     
@@ -106,13 +79,16 @@
   
     </div>
     <div class = "col s4 left-align">
+
       <br>
       <br>
       
       <h1 class="montserrat white-text" (click)="testButton()"style=" position:absolute;z-index:100;left:49%;color:rgb(216, 212, 208); " >OHRHA</h1>
+      <img src="./images/ohrhawhite.svg" style='position:absolute; z-index:100; right:1135;top:20; height:200px; width:100px;  opacity:.3;'>
   
     </div>
-      </div>
+
+  </div>
   
   <div class = "row"></div>
   <div class = "row"></div>
@@ -124,17 +100,21 @@
   
       </div>
       <div class = "col s3 right-align">         
-        <a href="#" ng-click="openLightsPage()" class="white-text"style="position: absolute; right:1204; z-index:1;" > 
-          <h4 class="montserrat red-text small" style=" font-size:30px;" style=" font-size:30px;">LIGHT</h4>
+        <a href="#" ng-click="openHomePage()" class="white-text"style="position: absolute; top:152; right:1006; z-index:1; " > 
+          <h4 class="montserrat red-text small" style=" font-size:30px;" style=" font-size:30px;">HOME</h4>
         </a>
       </div>
-      <div class = "col s3 center-align">         <a href="#" class="white-text"style="position: absolute;" > <h4 class="montserrat red-text small" style=" font-size:30px;" style=" font-size:30px;">SOUND</h4></a>
+      <div class = "col s3 center-align">    
+
+         <a href="#" ng-click="openSoundPage()" class="white-text"style="position: absolute; opacity:1; top:152; right:786; z-index:1;" > 
+          <h4 class="montserrat red-text small" style=" font-size:30px;">SOUND</h4>
+        </a>
   
       </div>
       <div class = "col s3 left-align">         
         
-        <a href="#" class="white-text"style="position: absolute;" > 
-          <h4 class="montserrat red-text small" style=" font-size:30px;" style=" font-size:30px;">SHOP</h4>
+        <a href="#" ng-click="openContactPage()"  class="white-text"style="position: absolute; opacity:1; top:152; right:506; z-index:1;"  > 
+          <h4 class="montserrat red-text small" style=" font-size:30px;" style=" font-size:30px;">CONTACT</h4>
         </a>
 
 
@@ -154,10 +134,230 @@
 
 
     <div  style=" position:absolute; width:48.5% ; right:50;">
+
       <br>
       <br>
       <br>
-      <p class = " opensans left-align" style="  color:rgb(216, 212, 208); font-size:20px; ">Oregon-based musician and visual artist Liz Harris has been releasing music under the name Grouper since 2005. Over the years her sound has spanned shades of noise, folk, drone, pop, and ambient, channeled with poignant emotional honesty and a uniquely melancholic mood. Her most recent album, Grid Of Points, pairs skeletal piano with stark vocal harmonies and vulnerable silences, inspired by "the idea that something is missing or cold." Her stateside live appearances are rare but revelatory, obscured impressions of mortality, melody, and the unseen.</p>
+      <p class = " opensans left-align" style="  color:rgb(216, 212, 208); font-size:20px;opacity:1; ">
+        ...Giving in, we made contact. Approaching the gate i was immediately convinced of the smell of sulfur, and overtaken by a thick cloud instantly robbing me of my breathe. As i spun endlessly violently choking, and flailing about.
+        I realised i was being
+       
+        .</p>
+        <p class = " opensans left-align" style="  color:rgb(216, 212, 208); font-size:20px;opacity:0; ">
+          ...As i rose above my body, I looked down, and saw my friend looking back at me with a grotesque pleasure radiating from its greedy eyes. Dancing as i sp
+         
+          .</p>
+    <i class = "material-icons left-align" style="position:absolute; left:0; font-size:30px;">email 
+    <span class="montserrat" style="font-size:24px;">OHRHA@PROTONMAIL.COM</span></i>
+      <br>
+      <br>
+      <br>
+
+
+       <i class="fa fa-spotify left-align" aria-hidden="true" style='font-size:50px; position:absolute; left: 62;'></i>
+       <a href="https://instagram.com/ohrhahrho"class="white-text" ><i class="fa fa-instagram left-align" aria-hidden="true" style='font-size:50px; position:absolute; left: 00;'></i></a>
+       <a href="https://youtube.com" class="white-text"><i class="fa fa-youtube left-align" aria-hidden="true" style='font-size:50px; position:absolute; left: 120;'></i></a>
+       <a href="https://twitter.com/ohrhahrho" class="white-text"><i class="fa fa-twitter left-align" aria-hidden="true" style='font-size:50px; position:absolute; left: 185;'></i></a>
+       <a href="https://bandcamp.com/ohrhahrho" class="white-text"><i class="fa fa-bandcamp left-align" aria-hidden="true" style='font-size:50px; position:absolute; left: 250;'></i></a>
+
+
+
+    </div>
+  
+
+
+    </div>
+  
+  
+  <div class = "row"></div>
+  <div class = "row"></div>
+
+  <div class = "row"></div>
+
+  <div class = "row"></div>
+
+  <div class = "row"></div>
+  <div class = "row"></div>
+
+  <div class = "row"></div>
+
+  <div class = "row"></div>
+
+  <div class = "row"></div>
+
+  <div class = "row"></div>
+  <div class = "row"></div>
+
+  <div class = "row"></div>
+
+  <div class = "row"></div>
+
+  <div class = "row"></div>
+
+  <div class = "row"></div>
+
+  <div class = "row"></div>
+
+  <div class = "row"></div>
+
+  <div class = "row"></div>
+
+  <div class = "row"></div>
+
+  <div class = "row"></div>
+
+  <div class = "row"></div>
+
+  <div class = "row"></div>
+
+  <div class = "row"></div>
+
+
+  
+    </div>
+        <div class = "col s12">
+  
+          <div class = "row">
+  
+            <div class = "row">
+              <div class = "col s2"></div>
+              <div class = "col s8 right-align">
+                <br>
+          
+  
+              </div>
+              <div class = "col s2"></div>
+  
+            </div>
+            <div class = "row"></div>
+            <div class = "row"></div>
+            <div class = "row"></div>
+            <div class = "row"></div>
+            <div class = "row"></div>
+            <div class = "row"></div>
+            <div class = "row"></div>
+            <div class = "row"></div>
+            <div class = "row"></div>
+            <div class = "row"></div>
+            <div class = "row"></div>
+            <div class = "row"></div>
+            <div class = "col s12 center-align">
+           
+              <div class = "row"></div>
+              <div class = "row"></div>
+         
+              </div>
+  
+              
+            </div>
+     
+       
+          
+         
+  
+          </div>
+  
+        </div>
+    </div>
+
+
+    <div ng-if="soundOpen && !contactPageOpen" class="row">
+  
+      <div class = "col s12 center-align animated fadeIn"  >
+
+        <div ng-if="!zoomPageOpen">
+
+              <img  class="responsive-img"  ng-click="closeZoomPage()" style = "width:280px; height:160px; position:absolute; z-index:1;top:400;border-radius:0%; right:1000;"src="./images/ii.png">
+        
+    
+        </div>
+        <div ng-if="zoomPageOpen"class="animated fadeIn">
+        
+          
+         <a href="#" class="white-text"> <i class = "material-icons white-text" ng-click="closeZoomPage()" style="font-size:40px;position:absolute; z-index:1; top:380;right:50">clear</i></a>
+
+          <img  class="responsive-img" style = "width:1250px; height:800px;position:absolute; z-index:1; top:450;right:50;"src="./images/ii.png">
+    
+
+        
+    
+
+         </div>
+    <div class = "col s12 animated fadeIn ">
+      
+    
+      <div class = "row">
+  
+     <div class = "col s4">
+  
+     </div>
+     <div class = "col s4">
+  
+    </div>
+    <div class = "col s4 left-align">
+      <br>
+      <br>
+      
+      <h1 class="montserrat white-text" (click)="testButton()"style=" position:absolute;z-index:100;left:49%;color:rgb(216, 212, 208); " >OHRHA</h1>
+      <img src="./images/ohrhawhite.svg" style='position:absolute; z-index:100; right:1135;top:20; height:200px; width:100px;  opacity:.3;'>
+
+    </div>
+      </div>
+  
+  <div class = "row"></div>
+  <div class = "row"></div>
+  <div class = "row"></div>
+  <div class = "row"></div>
+
+     
+      <div class = "col s3 center-align">         
+  
+      </div>
+      <div class = "col s3 right-align">         
+        <a href="#" ng-click="openHomePage()" class="white-text"style="position: absolute; right:1204; z-index:1;" > 
+          <h4 class="montserrat red-text small" style=" font-size:30px;" style=" font-size:30px;">HOME</h4>
+        </a>
+      </div>
+      <div class = "col s3 center-align">         
+        <a href="#" ng-click="openSoundPage()" class="white-text"style="position: absolute;z-index:1;right:900;" > 
+          <h4 class="montserrat red-text small" style=" font-size:30px;" style=" font-size:30px;">SOUND</h4>
+        </a>
+      </div>
+      <div class = "col s3 left-align">         
+        
+        <a href="#" ng-click="openContactPage()"  class="white-text"style="position: absolute;z-index:1;right:600" > 
+          <h4 class="montserrat red-text small" style=" font-size:30px;" style=" font-size:30px;">CONTACT</h4>
+        </a>
+
+
+      </div>
+  
+      <div class = "row">
+
+      <div class = "col s6 left-align">    
+        <br>
+        <br>
+        <br>
+        
+      <div class = "row">
+        
+      </div>
+     
+    </div>
+
+
+    <div  style=" position:absolute; width:48.5% ; right:50;">
+      <br>
+      <br>
+      <br>
+      <p class = " opensans left-align" style="  color:rgb(216, 212, 208); font-size:20px; ">
+        ...But the way it called out to me was mezmerizing. I couldn't help but be caught up in its rumor and alarm. I was drawn, stretched across the canvas, made bare. 
+        I was re-defined, and then i was erased. A keen reader, it watches closely, pulling me closer, closer. like a book...reading me like a book.
+        .</p>
+        <p class = " opensans left-align" style="  color:rgb(216, 212, 208); font-size:20px; ">
+          ...I saw it then as i see it now.
+          .</p>
+  
 
     </div>
   
@@ -527,7 +727,7 @@
     </div>
 
 
-    <div ng-if="!soundOpen" class="row">
+    <div ng-if="homePageOpen && !contactPageOpen || homePageOpen && !soundOpen" class="row">
   
       <div class = "col s12 center-align" >
         
@@ -535,13 +735,17 @@
       <video ng-if="chapelOpen" ng-click="test()" class="animated fadeIn" style="position:absolute ;left:0%; z-index:0;" id="videoBG"  autoplay muted loop>
         <source src="./images/chapel.mp4" type="video/mp4">
       </video>  
+
       <video ng-if="soundOpen" ng-click="test()" class="animated fadeIn" style="position:absolute ;left:0%; z-index:0;" id="videoBG"  autoplay muted loop>
         <source src="./images/eyelong.mp4" type="video/mp4">
       </video>
+
       <video ng-if="shopOpen" ng-click="test()" class="animated fadeIn" style="position:absolute ;left:0%; z-index:0;" id="videoBG"  autoplay muted loop>
         <source src="./images/ooo.mp4" type="video/mp4">
       </video>
+      
     <div class = "col s12 ">
+
       <br>
       <br>
       <br>
@@ -562,7 +766,6 @@
       <br>
       <br>
       <br>
-  
       <br>
       <br>
       <br>
@@ -582,8 +785,9 @@
       <br>
       <br>
       
-      <h1 class="montserrat white-text" (click)="testButton()"style=" position:absolute;z-index:100;left:49%;color:rgb(216, 212, 208); " >OHRHA</h1>
-  
+      <h1 class="montserrat white-text" (click)="testButton()"style=" position:absolute;z-index:100;left:49%;color:rgb(216, 212, 208); " >OHRHA...</h1>
+      <img src="./images/ohrhawhite.svg" style='position:absolute; z-index:100; right:1135;top:575; height:200px; width:100px;  opacity:.3;'>
+
     </div>
       </div>
   
@@ -596,13 +800,14 @@
       <div class = "col s3 center-align">         
   
       </div>
-      <div class = "col s3 right-align">         <a href="#" ng-click="openLightsPage()"class="white-text"style="position: absolute;" > <h4 class="montserrat red-text small" style=" font-size:30px;" style=" font-size:30px;">LIGHT</h4></a>
+      <div class = "col s3 right-align">         
+        <a href="#" ng-click="openLightsPage()"class="white-text"style="position: absolute;" > <h4 class="montserrat red-text small" style=" font-size:30px;" style=" font-size:30px;">LIGHT</h4></a>
       </div>
-      <div class = "col s3 center-align">         <a href="#" class="white-text"style="position: absolute;" > <h4 class="montserrat red-text small" style=" font-size:30px;" style=" font-size:30px;">SOUND</h4></a>
-  
+      <div class = "col s3 center-align">         
+        <a href="#" ng-click="openSoundPage()"class="white-text" ng-click="openShopPage()"style="position: absolute;" > <h4 class="montserrat red-text small" style=" font-size:30px;" style=" font-size:30px;">SOUND</h4></a>
       </div>
-      <div class = "col s3 left-align">         <a href="#" class="white-text"style="position: absolute;" > <h4 class="montserrat red-text small" style=" font-size:30px;" style=" font-size:30px;">SHOP</h4></a>
-  
+      <div class = "col s3 left-align">         
+        <a href="#" ng-click="openContactPage()"  class="white-text"style="position: absolute;" > <h4 class="montserrat red-text small" style=" font-size:30px;" style=" font-size:30px;">CONTACT</h4></a>
       </div>
   
       <div class = "row">
@@ -621,6 +826,7 @@
       <br>
       <br>
       <div style=" position:absolute;">
+
       <p class = " opensans" style="  color:rgb(216, 212, 208); font-size:20px; ">Oregon-based musician and visual artist Liz Harris has been releasing music under the name Grouper since 2005. Over the years her sound has spanned shades of noise, folk, drone, pop, and ambient, channeled with poignant emotional honesty and a uniquely melancholic mood. Her most recent album, Grid Of Points, pairs skeletal piano with stark vocal harmonies and vulnerable silences, inspired by "the idea that something is missing or cold." Her stateside live appearances are rare but revelatory, obscured impressions of mortality, melody, and the unseen.</p>
       </div>
       <div class = "row">

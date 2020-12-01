@@ -1,6 +1,6 @@
 (function () {
 
-   //console.log("routes.js loaded");
+   console.log("routes.js loaded");
 
     var app = angular.module("appRoutes", ['ngRoute']);
 
@@ -159,14 +159,14 @@
                     }
                 }
             })
-            .when('/char', {
-                templateUrl: '../charo.html',
+            .when('/sounds', {
+                templateUrl: '../sound.html',
                 name: "SHINE BRIGHT COACHING | FORMS",
                 controller: "mainCtrl",
                 controllerAs: 'main',
                 resolve: {
                     init: function ($route) {
-                        console.log("index")
+                        console.log("sounds")
                     }
                 }
             })
@@ -177,7 +177,7 @@
                 controllerAs: 'main',
                 resolve: {
                     init: function ($route) {
-                        console.log("index")
+                        console.log("ohh")
                     }
                 }
             })
