@@ -20,6 +20,8 @@ console.log("OY")
         $scope.lightsPageOpen = false;
         $scope.contactPageOpen = false;
         $scope.zoomPageOpen = false;
+        $scope.volumeOn = false;
+
 
         $scope.audio = new Audio('../audio/ui_tap-variant-01.wav')
         $scope.bgaudio = new Audio('../images/web.wav')
@@ -35,6 +37,17 @@ console.log("OY")
 
         }
         $scope.openShopPage()
+        $scope.toggleMusic = function(){
+            console.log('clicked')
+
+            if(!$scope.volumeOn){
+
+                $scope.volumeOn = true;
+            }else{
+
+                $scope.volumeOn = false;
+            }
+        }
 
         $scope.closeZoomPage = function(){
             $scope.audio.play()
@@ -59,8 +72,9 @@ $scope.zoomPageOpen = false;
 
                     $scope.contactPageOpen  = true;
                     $scope.homePageOpen = false;
-                    $scope.soundOpen    = false;
-                    $scope.lightPageOpen    = false;
+                    $scope.soundOpen        = false;
+                    $scope.soundPageOpen = false;
+                    $scope.lightsPageOpen    = false;
 
                 }
 
@@ -119,6 +133,7 @@ $scope.zoomPageOpen = false;
                     $scope.soundOpen = true;
                     $scope.homePageOpen = false;
                     $scope.contactPageOpen = false;
+                    $scope.lightsPageOpen = false;
 
 
             }
@@ -127,10 +142,10 @@ $scope.zoomPageOpen = false;
         $scope.openLightsPage = function(){
 
           //  $scope.audio.play()
-            if(!$scope.soundOpen){
+            if(!$scope.lightsPageOpen){
 
-               // $scope.lightsPageOpen = true;
-                $scope.soundOpen = true;
+               $scope.lightsPageOpen = true;
+                $scope.soundOpen = false;
                 $scope.contactPageOpen = false;
                 $scope.homePageOpen = false;
 
@@ -145,6 +160,7 @@ $scope.zoomPageOpen = false;
                 $scope.homePageOpen = true;
                 $scope.contactPageOpen = false;
                 $scope.soundOpen = false;
+                $scope.lightsPageOpen = false;
 
             }
 
