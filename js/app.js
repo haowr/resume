@@ -43,6 +43,8 @@ console.log("OY")
             if(!$scope.volumeOn){
 
                 $scope.volumeOn = true;
+                $scope.bgaudio.play()
+
             }else{
 
                 $scope.volumeOn = false;
