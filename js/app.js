@@ -33,7 +33,7 @@ console.log("OY")
         },200)
         $scope.openShopPage = function(){
 
-            //$scope.bgaudio.play()
+            $scope.bgaudio.play()
 
         }
         $scope.openShopPage()
