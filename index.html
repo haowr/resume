@@ -57,7 +57,7 @@
 
   
  
-  <div class="row background hide-on-small-only " >
+  <div class="row background hide-on-med-and-down" >
 
 
 
@@ -274,8 +274,7 @@
         <div ng-if="zoomPageOpen"class="animated fadeIn">
         
           
-         <a href="#" class="white-text"> <i class = "material-icons white-text" ng-click="closeZoomPage()" style="font-size:40px;position:absolute; z-index:1; top:380;right:50">clear</i></a>
-
+         <a href="#" class="white-text" style="position:absolute; z-index:88; top:400;right:50"ng-click="closeZoomPage()" > <i class = "material-icons white-text" style="font-size:40px;">clear</i></a>
           <img  class="responsive-img" style = "width:1250px; height:800px;position:absolute; z-index:1; top:450;right:50;"src="./images/ii.png">
     
 
@@ -346,7 +345,7 @@
     </div>
 
 
-    <div  style=" position:absolute; width:48.5% ; right:50;">
+    <div  style=" position:absolute; width:48.5% ; right:50;z-index:2;">
       <br>
       <br>
       <br>
@@ -1228,21 +1227,22 @@
     
       <div class = "row">
   
-     <div class = "col s4">
-  
-     </div>
-     <div class = "col s4">
-  
-    </div>
-    <div class = "col s4 left-align">
-      <br>
-      <br>
-      
-      <h1 class="montserrat white-text" (click)="testButton()"style=" position:absolute;z-index:100;left:49%;color:rgb(214, 212, 212); " >OHRHA      
-        <img src="./images/ohrhawhite.svg" style='position:absolute; z-index:9; height:200px; width:100px;  opacity:.3;right:85; top:-73;'>
-      </h1>
+          <div class = "col s4">
+        
+          </div>
+          <div class = "col s4">
+        
+          </div>
+          <div class = "col s4 left-align">
+            <br>
+            <br>
+            
+            <h1 class="montserrat white-text" (click)="testButton()"style=" position:absolute;z-index:100;left:49%;color:rgb(214, 212, 212); " >OHRHA      
+              <img src="./images/ohrhawhite.svg" style='position:absolute; z-index:9; height:200px; width:100px;  opacity:.3;right:85; top:-73;'>
+            </h1>
 
-    </div>
+          </div>
+
       </div>
   
   <div class = "row"></div>
@@ -1250,10 +1250,11 @@
   <div class = "row"></div>
   <div class = "row"></div>
 
+  <div class="hide-on-small">
      
       <div class = "col s3 center-align" >         
         <a href="#" ng-if="homePageOpen"ng-click="openHomePage()"class=""style="position: absolute;right:985; top:720; color:rgb(214, 212, 212);" > <h4 class="montserrat  small" style=" font-size:30px;" style=" font-size:30px;">HOME</h4></a>
-        <a href="#" ng-if="!homePageOpen" ng-click="openHomePage()"style="position: absolute;right:985; top:720; color:rgb(214, 212, 212);" > <h4 class="montserrat small" style=" font-size:30px;color:rgb(214, 212, 212);" style=" font-size:30px;">HOME</h4></a>
+        <a href="#" ng-if="!homePageOpen" ng-click="openHomePage()"style="position: absolute;right:985; top:720; color:rgb(214, 212, 212);" > <h4 class="montserrat small" style=" font-size:30px;color:rgb(214, 212, 212);" style=" font-size:30px;">HOME?</h4></a>
 
 
       </div>
@@ -1270,6 +1271,8 @@
         <a href="#" ng-click="openContactPage()"  class="white-text"style="position: absolute; top:720; right:220" > <h4 class="montserrat red-text small" style=" font-size:30px;" style=" font-size:30px;">CONTACT</h4></a>
       </div>
   
+
+  </div>
       <div class = "row">
       <div class = "col s6 left-align">    
         <br>
@@ -1622,6 +1625,1574 @@
 
   </div>
        
+
+  <div class="row background hide-on-large-only" >
+
+
+
+ 
+    <div ng-if="contactPageOpen " class="row animated fadeIn">
+  
+      <div class = "col s12 center-align "  >
+
+   
+    <div class = "col s12">
+      
+    
+      <div class = "row">
+  
+     <div class = "col s4">
+  
+     </div>
+     <div class = "col s4">
+      <img src="./images/ohrhawhite.svg" style='position:absolute; z-index:100; left:182;top:20; height:200px; width:100px;  opacity:.3;'>
+
+    </div>
+    <div class = "col s4 ">
+
+      <br>
+      <br>
+      
+      <h1 class="montserrat white-text" (click)="testButton()"style=" position:absolute;z-index:100;left:49%;color:rgb(216, 212, 208); " >OHRHA</h1>
+  
+    </div>
+
+  </div>
+  
+  <div class = "row"></div>
+  <div class = "row"></div>
+  <div class = "row"></div>
+  <div class = "row"></div>
+
+     
+  <div class = "col s3 center-align" >         
+    <a href="#" ng-if="homePageOpen"ng-click="openHomePage()"style="position: absolute;right:985; top:170;z-index:88;" > <h4 class="montserrat small" style=" font-size:30px;" style=" font-size:30px;">HOME</h4></a>
+    <a href="#" ng-if="!homePageOpen" ng-click="openHomePage()" class="red-text"style="position: absolute;right:985; top:170;z-index:88;color:rgb(214, 212, 212);" > <h4 class="montserrat small red-text" style=" font-size:30px;color:rgb(214, 212, 212);" style=" font-size:30px;">HOME</h4></a>
+
+
+  </div>
+  <div class = "col s3 right-align">         
+    <a href="#" ng-if="lightsPageOpen" ng-click="openLightsPage()"class="white-text"style="position: absolute;right:750; top:170; color:rgb(214, 212, 212); z-index:88;" > <h4 class="montserrat white-text small" style=" font-size:30px;" style=" font-size:30px;">LIGHT</h4></a>
+    <a href="#" ng-if="!lightsPageOpen" ng-click="openLightsPage()"class="red-text"style="position: absolute;right:750; top:170; color:rgb(214, 212, 212); z-index:88;" > <h4 class="montserrat red-text small" style=" font-size:30px;" style=" font-size:30px;">LIGHT</h4></a>
+
+  </div>
+  <div class = "col s3 center-align">         
+    <a href="#" ng-click="openSoundPage()"class="red-text" style="position: absolute; top:170; right:490; z-index:88;" > 
+      <h4 class="montserrat red-text small" style=" font-size:30px;" style=" font-size:30px;">SOUND</h4>
+    </a>
+  </div>
+  <div class = "col s3 left-align">         
+    <div style="position:absolute;  z-index:1000; width:1200px; border:1px solid rgb(236, 233, 233); top :228;left:1470;"><span></span></div>
+    <a href="#" ng-click="openContactPage()" style="position: absolute; top:170; right:200; color:rgb(214, 212, 212); z-index:88;" > <h4 class="montserrat  small" style=" font-size:30px;" style=" font-size:30px; color:rgb(214, 212, 212)">CONTACT</h4></a>
+  </div>
+  
+  
+      <div class = "row">
+      <div class = "col s6 left-align">    
+        <br>
+        <br>
+        <br>
+        
+        
+      <div class = "row">
+        
+      </div>
+     
+    </div>
+
+
+    <div  style=" position:absolute; width:48.5% ; right:50;">
+
+      <br>
+      <br>
+      <br>
+      <br>
+      <p class = " opensans left-align" style="  color:rgb(216, 212, 208); font-size:20px;opacity:1; ">
+        ...Giving in, we made contact. Approaching the gate i was immediately convinced of the smell of sulfur, and overtaken by a thick cloud instantly robbing me of my breathe. As i spun endlessly violently choking, and flailing about.
+        I realised i was being
+       
+        .</p>
+        <p class = " opensans left-align" style="  color:rgb(216, 212, 208); font-size:20px;opacity:1; ">
+          ...As i rose above my body, I looked down, and saw my friend looking back at me with a grotesque pleasure radiating from its greedy eyes. Dancing as i sp
+         
+          .</p>
+    <i class = "material-icons left-align" style="position:absolute; left:0; font-size:30px;">email 
+    <span class="montserrat" style="font-size:24px;">OHRHA@PROTONMAIL.COM</span></i>
+      <br>
+      <br>
+      <br>
+
+
+       <i class="fa fa-spotify left-align" aria-hidden="true" style='font-size:50px; position:absolute; left: 62;'></i>
+       <a href="https://instagram.com/ohrhahrho"class="white-text" ><i class="fa fa-instagram left-align" aria-hidden="true" style='font-size:50px; position:absolute; left: 00;'></i></a>
+       <a href="https://youtube.com" class="white-text"><i class="fa fa-youtube left-align" aria-hidden="true" style='font-size:50px; position:absolute; left: 120;'></i></a>
+       <a href="https://twitter.com/ohrhahrho" class="white-text"><i class="fa fa-twitter left-align" aria-hidden="true" style='font-size:50px; position:absolute; left: 185;'></i></a>
+       <a href="https://bandcamp.com/ohrhahrho" class="white-text"><i class="fa fa-bandcamp left-align" aria-hidden="true" style='font-size:50px; position:absolute; left: 250;'></i></a>
+
+
+
+    </div>
+  
+
+
+    </div>
+  
+  
+  <div class = "row"></div>
+  <div class = "row"></div>
+
+  <div class = "row"></div>
+
+  <div class = "row"></div>
+
+  <div class = "row"></div>
+  <div class = "row"></div>
+
+  <div class = "row"></div>
+
+  <div class = "row"></div>
+
+  <div class = "row"></div>
+
+  <div class = "row"></div>
+  <div class = "row"></div>
+
+  <div class = "row"></div>
+
+  <div class = "row"></div>
+
+  <div class = "row"></div>
+
+  <div class = "row"></div>
+
+  <div class = "row"></div>
+
+  <div class = "row"></div>
+
+  <div class = "row"></div>
+
+  <div class = "row"></div>
+
+  <div class = "row"></div>
+
+  <div class = "row"></div>
+
+  <div class = "row"></div>
+
+  <div class = "row"></div>
+
+
+  
+    </div>
+        <div class = "col s12">
+  
+          <div class = "row">
+  
+            <div class = "row">
+              <div class = "col s2"></div>
+              <div class = "col s8 right-align">
+                <br>
+                <i ng-if="volumeOn" ng-click="toggleMusic()" class = 'material-icons ' style="font-size:30px; position:absolute; top:740; right:100; color:rgb(214, 212, 212)">volume_up</i>
+                <i ng-if="!volumeOn" ng-click="toggleMusic()" class = 'material-icons ' style="font-size:30px; position:absolute; top:190; right:100; color:rgb(214, 212, 212)" >volume_off</i>
+  
+              </div>
+              <div class = "col s2"></div>
+            </div>
+            <div class = "row"></div>
+            <div class = "row"></div>
+            <div class = "row"></div>
+            <div class = "row"></div>
+            <div class = "row"></div>
+            <div class = "row"></div>
+            <div class = "row"></div>
+            <div class = "row"></div>
+            <div class = "row"></div>
+            <div class = "row"></div>
+            <div class = "row"></div>
+            <div class = "row"></div>
+            <div class = "col s12 center-align">
+           
+              <div class = "row"></div>
+              <div class = "row"></div>
+         
+              </div>
+  
+              
+            </div>
+     
+       
+          
+         
+  
+          </div>
+  
+        </div>
+    </div>
+
+
+    <div ng-if="lightsPageOpen " class="row animated fadeIn">
+  
+      <div class = "col s12 center-align"  >
+
+        <div ng-if="!zoomPageOpen">
+
+              <img  class="responsive-img"  ng-click="closeZoomPage()" style = "width:280px; height:160px; position:absolute; z-index:1;top:450;border-radius:0%; right:100; border:1px solid rgba(187, 185, 185,0.5) "src="./images/ii.png">
+        
+    
+        </div>
+        <div ng-if="zoomPageOpen"class="animated fadeIn">
+        
+          
+         <a href="#" class="white-text" style="position:absolute; z-index:88; top:400;right:50"ng-click="closeZoomPage()" > <i class = "material-icons white-text" style="font-size:40px;">clear</i></a>
+          <img  class="responsive-img" style = "width:1250px; height:800px;position:absolute; z-index:1; top:450;right:50;"src="./images/ii.png">
+    
+
+        
+    
+
+         </div>
+    <div class = "col s12 ">
+      
+    
+      <div class = "row">
+  
+     <div class = "col s4">
+  
+     </div>
+     <div class = "col s4">
+  
+    </div>
+    <div class = "col s4 left-align">
+      <br>
+      <br>
+      <br>
+      
+      <h1 class="montserrat white-text" (click)="testButton()"style=" position:absolute;z-index:100;left:49%;color:rgb(216, 212, 208); " >
+        OHRHA
+        <img src="./images/ohrhawhite.svg" style='position:absolute; z-index:9; height:200px; width:100px;  opacity:.3;right:75; top:-63;'>
+      </h1>
+
+    </div>
+      </div>
+  
+  <div class = "row"></div>
+  <div class = "row"></div>
+  <div class = "row"></div>
+  <div class = "row"></div>
+
+     
+  <div class = "col s3 center-align" >         
+    <a href="#" ng-if="homePageOpen"ng-click="openHomePage()"class="white-text"style="position: absolute;right:985; top:170;z-index:88;" > <h4 class="montserrat white-text small" style=" font-size:30px;" style=" font-size:30px;">HOME</h4></a>
+    <a href="#" ng-if="!homePageOpen" ng-click="openHomePage()"class="red-text"style="position: absolute;right:985; top:170;z-index:88;" > <h4 class="montserrat red-text small" style=" font-size:30px;" style=" font-size:30px;">HOME</h4></a>
+
+
+  </div>
+  <div class = "col s3 right-align">         
+    <a href="#" ng-if="lightsPageOpen" ng-click="openLightsPage()"class="white-text"style="position: absolute;right:750; top:170; color:rgb(214, 212, 212)" > <h4 class="montserrat white-text small" style=" font-size:30px;" style=" font-size:30px;">LIGHT</h4></a>
+    <a href="#" ng-if="!lightsPageOpen" ng-click="openLightsPage()"style="position: absolute;right:750; top:170; color:rgb(214, 212, 212)" > <h4 class="montserrat small" style=" font-size:30px;" style=" font-size:30px; color:rgb(214, 212, 212);">LIGHT</h4></a>
+
+  </div>
+  <div class = "col s3 center-align">         
+    <a href="#" ng-click="openSoundPage()"class="red-text" style="position: absolute; top:170; right:490; z-index:88;" > <h4 class="montserrat red-text small" style=" font-size:30px;" style=" font-size:30px;">SOUND</h4></a>
+  </div>
+  <div class = "col s3 left-align">         
+    <div style="position:absolute;  z-index:1000; width:1200px; border:1px solid rgb(236, 233, 233); top :228;left:1470;"><span></span></div>
+    <a href="#" ng-click="openContactPage()"  class="white-text"style="position: absolute; top:170; right:220; z-index:88;" > <h4 class="montserrat red-text small" style=" font-size:30px;" style=" font-size:30px; color:rgb(214, 212, 212)">CONTACT</h4></a>
+  </div>
+  
+      <div class = "row">
+
+      <div class = "col s6 left-align">    
+        <br>
+        <br>
+        <br>
+        
+      <div class = "row">
+        
+      </div>
+     
+    </div>
+
+
+    <div  style=" position:absolute; width:48.5% ; right:50;z-index:2;">
+      <br>
+      <br>
+      <br>
+      <p class = " opensans left-align" style="  color:rgb(214, 212, 212); font-size:20px; ">
+        But the way it called out to me was mezmerizing. I couldn't help but be caught up in its rumor and alarm. I was drawn, stretched across the canvas, made bare. 
+        I was re-defined, and then i was erased. A keen reader, it watches closely, pulling me closer, closer. like a book...reading me like a book.
+        </p>
+        <p class = " opensans left-align" style="  color:rgb(214, 212, 212); font-size:20px; ">
+          ...I saw it then as i see it now.
+          </p>
+  
+
+    </div>
+  
+
+
+    </div>
+  
+  
+  <div class = "row"></div>
+  <div class = "row"></div>
+
+  <div class = "row"></div>
+
+  <div class = "row"></div>
+
+  <div class = "row"></div>
+  <div class = "row"></div>
+
+  <div class = "row"></div>
+
+  <div class = "row"></div>
+
+  <div class = "row"></div>
+
+  <div class = "row"></div>
+  <div class = "row"></div>
+
+  <div class = "row"></div>
+
+  <div class = "row"></div>
+
+  <div class = "row"></div>
+
+  <div class = "row"></div>
+
+  <div class = "row"></div>
+
+  <div class = "row"></div>
+
+  <div class = "row"></div>
+
+  <div class = "row"></div>
+
+  <div class = "row"></div>
+
+  <div class = "row"></div>
+
+  <div class = "row"></div>
+
+  <div class = "row"></div>
+
+
+  
+    </div>
+        <div class = "col s12">
+  
+          <div class = "row">
+  
+            <div class = "row">
+              <div class = "col s2"></div>
+              <div class = "col s8 right-align">
+                <br>
+                <i ng-if="volumeOn" ng-click="toggleMusic()" class = 'material-icons ' style="font-size:30px; position:absolute; top:740; right:100; color:rgb(214, 212, 212)">volume_up</i>
+                <i ng-if="!volumeOn" ng-click="toggleMusic()" class = 'material-icons ' style="font-size:30px; position:absolute; top:190; right:100; color:rgb(214, 212, 212)" >volume_off</i>
+  
+              </div>
+              <div class = "col s2"></div>
+  
+            </div>
+            <div class = "row"></div>
+            <div class = "row"></div>
+            <div class = "row"></div>
+            <div class = "row"></div>
+            <div class = "row"></div>
+            <div class = "row"></div>
+            <div class = "row"></div>
+            <div class = "row"></div>
+            <div class = "row"></div>
+            <div class = "row"></div>
+            <div class = "row"></div>
+            <div class = "row"></div>
+            <div class = "col s12 center-align">
+           
+              <div class = "row"></div>
+              <div class = "row"></div>
+         
+              <!--
+              <div class = "row">
+  
+              <div class = "col s4 center-align">
+  
+                <a ng-click="openMusicPage()" href="#" class="white-text">
+  
+                     <p class = "montserrat  flow-text white-text" style="text-decoration:underline;"  > MUSIC</p>
+  
+                </a>
+  
+              </div>
+  
+              <div class = "col s4 center-align">
+  
+                <a ng-click="openArtPage()" href="#" class="white-text">
+  
+                    <p class = "montserrat  flow-text white-text"style="text-decoration:underline;"   > ART</p>
+  
+                </a>
+  
+              </div>
+  
+              <div class = "col s4 center-align">
+  
+                <a ng-click="openShopPage()" href="#" class="white-text">
+  
+                    <p class = "montserrat  flow-text white-text"style="text-decoration:underline;"   > SHOP</p>
+  
+                </a>
+  
+              </div>
+  
+              <div class = "row"></div>
+              <div class = "row"></div>
+  
+              <div class = "animated fadeIn">
+  
+              <div class = "row " ng-show="musicPageOpen">
+                
+  
+                <div class="hide-on-med-and-down">
+                  <div class = "row">
+  
+                    <div class = 'col s2'>
+  
+                    </div>
+                
+                    <div class = 'col s8' ng-click="openAlbumBuy(2)" style="border:2px solid white;">
+                      <p class = "montserrat white-text"  style="font-size:30px;">LP 001 - It was the worst of times</p>
+                      <p class = "montserrat white-text"  style="font-size:30px;">It was the worst of times</p>
+                      <p class = "montserrat white-text"  style="font-size:30px;">Record/Vinyl + Digital Album</p>
+                      <o class = "montserrat white-text"  class ="flow-text">Wrap-around heavy weight archival letterpress cover with additional pressed details inside and out, archival art print, and several smaller archival text fragment prints
+  
+                        Includes unlimited streaming of Grid Of Points via the free Bandcamp app, plus high-quality download in MP3, FLAC and more.</o>
+                        <br>
+                        <br>
+  
+                    </div>
+           
+                    <div class = 'col s2'>                    
+  
+                    </div>
+                  </div>
+                  
+                  </div>
+                  <div class="hide-on-med-and-down">
+  
+                                  <div class = 'col s2'>
+  
+                                  </div>
+                                  <div class = 'col s2' ng-click="openAlbumBuy(1)">
+                                    <img src="./images/vv.jpg" class="responsive-img" > 
+  
+                                  </div>
+                                  <div class = 'col s2' ng-click="openAlbumBuy(2)">
+                                    <img src="./images/vvback.jpg" class="responsive-img" > 
+  
+                                  </div>
+                                  <div class = 'col s2' ng-click="openAlbumBuy(3)">                    
+                                    <img src="./images/shirt.jpg" class="responsive-img" > 
+                                  </div>
+                                  <div class = 'col s2' ng-click="openAlbumBuy(4)">
+  
+                                    <img src="./images/whiteshirt.jpg" class="responsive-img" > 
+  
+                                  </div>
+                                  <div class = 'col s2'>                    
+  
+                                  </div>
+  
+                  </div>
+  
+              </div>
+              <div class = "row " ng-show="musicPageOpen">
+  
+                <div class="hide-on-large-only">
+  
+                  <div class = "row">
+  
+                    <div class = 'col s2'>
+  
+                    </div>
+  
+                    <div class = 'col s8' ng-click="openAlbumBuy(1)">
+  
+                      <img src="./images/vv.jpg" class="responsive-img"> 
+  
+                    </div>
+  
+                    <div class = 'col s2'>                    
+  
+                    </div>
+  
+                  </div>
+  
+                  <div class = "row">
+  
+                    <div class = 'col s2'>
+  
+                    </div>
+                  
+                    <div class = 'col s8' ng-click="openAlbumBuy(2)">
+  
+                      <img src="./images/vvback.jpg" class="responsive-img" > 
+  
+                    </div>
+  
+                    <div class = 'col s2'>                    
+                    </div>
+                    
+                  </div>
+                  <div class = "row">
+  
+                    <div class = 'col s2'>
+  
+                    </div>
+                  
+                    <div class = 'col s8' ng-click="openAlbumBuy(3)">
+  
+                      <img src="./images/shirt.jpg" class="responsive-img" > 
+  
+                    </div>
+  
+                    <div class = 'col s2'>                    
+                    </div>
+                    
+                  </div>
+                  <div class = "row">
+  
+                    <div class = 'col s2'>
+  
+                    </div>
+                  
+                    <div class = 'col s8' ng-click="openAlbumBuy(4)">
+  
+                      <img src="./images/whiteshirt.jpg" class="responsive-img" > 
+  
+                    </div>
+  
+                    <div class = 'col s2'>                    
+                    </div>
+                    
+                  </div>
+  
+                </div>
+  
+              </div>
+            </div>
+              <div ng-show="albumBuyPageOpen" class = "animated fadeIn">
+  
+                  <div class = "col s1"></div>
+                  <div class = "col s6 left-align">                  
+                    <img src="./images/vv.jpg" class="responsive-img" > 
+                  </div>
+                  <div class = "col s5 left-align">
+                    <div class = 'col s12 left-align'>
+  
+                      <p class = "montserrat white-text"  style="font-size:30px;">LP 001 - It was the worst of times</p>
+                      <p class = "montserrat white-text"  style="font-size:30px;">It was the worst of times</p>
+                      <p class = "montserrat white-text"  style="font-size:30px;">Record/Vinyl + Digital Album</p>
+                      <o class = "montserrat white-text"  class ="flow-text">Wrap-around heavy weight archival letterpress cover with additional pressed details inside and out, archival art print, and several smaller archival text fragment prints
+  
+                        Includes unlimited streaming of Grid Of Points via the free Bandcamp app, plus high-quality download in MP3, FLAC and more.</o>
+                        <br>
+                        <br>
+                        <a class="btn-flat red ">Button</a>
+  
+                    </div>
+  
+                  </div>
+  
+              </div>
+              
+              <div ng-show="albumBuyPageOpen2" class = "animated fadeIn">
+  
+                <div class = "col s1"></div>
+                <div class = "col s6 left-align">                  
+                  <img src="./images/vvback.jpg" class="responsive-img" > 
+                </div>
+                <div class = "col s5 left-align">
+                  <div class = 'col s12 left-align'>
+  
+                    <p class = "montserrat white-text"  style="font-size:30px;">LP 001 - It was the worst of times</p>
+                    <p class = "montserrat white-text"  style="font-size:30px;">It was the worst of times</p>
+                    <p class = "montserrat white-text"  style="font-size:30px;">Record/Vinyl + Digital Album</p>
+                    <o class = "montserrat white-text"  class ="flow-text">Wrap-around heavy weight archival letterpress cover with additional pressed details inside and out, archival art print, and several smaller archival text fragment prints
+  
+                      Includes unlimited streaming of Grid Of Points via the free Bandcamp app, plus high-quality download in MP3, FLAC and more.</o>
+                      <br>
+                      <br>
+                      <a class="btn-flat red ">Button</a>
+  
+                  </div>
+  
+                </div>
+  
+            </div>
+            <div ng-show="albumBuyPageOpen3" class = "animated fadeIn">
+  
+              <div class = "col s1"></div>
+              <div class = "col s6 left-align">                  
+                <img src="./images/shirt.jpg" class="responsive-img" > 
+              </div>
+              <div class = "col s5 left-align">
+                <div class = 'col s12 left-align'>
+  
+                  <p class = "montserrat white-text"  style="font-size:30px;">LP 001 - It was the worst of times</p>
+                  <p class = "montserrat white-text"  style="font-size:30px;">It was the worst of times</p>
+                  <p class = "montserrat white-text"  style="font-size:30px;">Record/Vinyl + Digital Album</p>
+                  <o class = "montserrat white-text"  class ="flow-text">Wrap-around heavy weight archival letterpress cover with additional pressed details inside and out, archival art print, and several smaller archival text fragment prints
+  
+                    Includes unlimited streaming of Grid Of Points via the free Bandcamp app, plus high-quality download in MP3, FLAC and more.</o>
+                    <br>
+                    <br>
+                    <a class="btn-flat red ">Button</a>
+  
+                </div>
+  
+              </div>
+  
+          </div>
+          <div ng-show="albumBuyPageOpen4" class = "animated fadeIn">
+  
+            <div class = "col s1"></div>
+            <div class = "col s6 left-align">                  
+              <img src="./images/whiteshirt.jpg" class="responsive-img" > 
+            </div>
+            <div class = "col s5 left-align">
+              <div class = 'col s12 left-align'>
+  
+                <p class = "montserrat white-text" style="font-size:30px;">LP 001 - It was the worst of times</p>
+                <p class = "montserrat white-text" style="font-size:30px;">It was the worst of times</p>
+                <p class = "montserrat white-text" style="font-size:30px;">Record/Vinyl + Digital Album</p>
+                <o class = "montserrat white-text" class ="flow-text">Wrap-around heavy weight archival letterpress cover with additional pressed details inside and out, archival art print, and several smaller archival text fragment prints
+  
+                  Includes unlimited streaming of Grid Of Points via the free Bandcamp app, plus high-quality download in MP3, FLAC and more.</o>
+                  <br>
+                  <br>
+                  <a class="btn-flat red ">Button</a>
+  
+              </div>
+  
+            </div>
+  
+        </div>
+  
+              </div>-->
+  
+              </div>
+  
+              
+            </div>
+     
+       
+          
+         
+  
+          </div>
+  
+        </div>
+    </div>
+
+    <div ng-if="soundOpen " class="row animated fadeIn">
+  
+      <div class = "col s12 center-align"  >
+
+        <div ng-if="!zoomPageOpen">
+
+              <img  class="responsive-img"  ng-click="closeZoomPage()" style = "width:280px; height:160px; position:absolute; z-index:1;top:450;border-radius:0%; right:100; border:1px solid rgba(187, 185, 185,0.5) "src="./images/ii.png">
+        
+    
+        </div>
+        <div ng-if="zoomPageOpen"class="animated fadeIn">
+        
+          
+         <a href="#" class="white-text"> <i class = "material-icons white-text" ng-click="closeZoomPage()" style="font-size:40px;position:absolute; z-index:1; top:380;right:50">clear</i></a>
+
+          <img  class="responsive-img" style = "width:1250px; height:800px;position:absolute; z-index:1; top:450;right:50;"src="./images/ii.png">
+    
+
+        
+    
+
+         </div>
+    <div class = "col s12 ">
+      
+    
+      <div class = "row">
+  
+     <div class = "col s4">
+  
+     </div>
+     <div class = "col s4">
+  
+    </div>
+    <div class = "col s4 left-align">
+      <br>
+      <br>
+      <br>
+      
+      <h1 class="montserrat white-text" (click)="testButton()"style=" position:absolute;z-index:100;left:49%;color:rgb(216, 212, 208); " >
+        OHRHA
+        <img src="./images/ohrhawhite.svg" style='position:absolute; z-index:9; height:200px; width:100px;  opacity:.3;right:75; top:-63;'>
+      </h1>
+
+    </div>
+      </div>
+  
+  <div class = "row"></div>
+  <div class = "row"></div>
+  <div class = "row"></div>
+  <div class = "row"></div>
+
+     
+  <div class = "col s3 center-align" >         
+    <a href="#" ng-if="homePageOpen"ng-click="openHomePage()"class="white-text"style="position: absolute;right:985; top:170;z-index:88;" > <h4 class="montserrat white-text small" style=" font-size:30px;" style=" font-size:30px;">HOME</h4></a>
+    <a href="#" ng-if="!homePageOpen" ng-click="openHomePage()"class="red-text"style="position: absolute;right:985; top:170;z-index:88;" > <h4 class="montserrat red-text small" style=" font-size:30px;" style=" font-size:30px;">HOME</h4></a>
+
+
+  </div>
+  <div class = "col s3 right-align">         
+    <a href="#" ng-if="lightsPageOpen" ng-click="openLightsPage()"class="white-text"style="position: absolute;right:750; top:170; color:rgb(214, 212, 212); z-index:88;" > <h4 class="montserrat white-text small" style=" font-size:30px;" style=" font-size:30px;">LIGHT</h4></a>
+    <a href="#" ng-if="!lightsPageOpen" ng-click="openLightsPage()"class="red-text"style="position: absolute;right:750; top:170; color:rgb(214, 212, 212); z-index:88;" > <h4 class="montserrat red-text small" style=" font-size:30px;" style=" font-size:30px;">LIGHT</h4></a>
+
+  </div>
+  <div class = "col s3 center-align">         
+    <a href="#" ng-click="openSoundPage()"class="white-text"style="position: absolute; top:170; right:490; z-index:88;color:rgb(214, 212, 212);" > <h4 class="montserrat small" style=" font-size:30px;" style=" font-size:30px; color:rgb(214, 212, 212);">SOUND</h4></a>
+  </div>
+  <div class = "col s3 left-align">         
+    <div style="position:absolute;  z-index:1000; width:1200px; border:1px solid rgb(236, 233, 233); top :228;left:1470;"><span></span></div>
+    <a href="#" ng-click="openContactPage()"  class="white-text"style="position: absolute; top:170; right:200; z-index:88;" > <h4 class="montserrat red-text small" style=" font-size:30px;" style=" font-size:30px; color:rgb(214, 212, 212)">CONTACT</h4></a>
+  </div>
+  
+      <div class = "row">
+
+      <div class = "col s6 left-align">    
+        <br>
+        <br>
+        <br>
+        
+      <div class = "row">
+        
+      </div>
+     
+    </div>
+
+
+    <div  style=" position:absolute; width:48.5% ; right:50;">
+      <br>
+      <br>
+      <br>
+      <p class = " opensans left-align" style="  color:rgb(214, 212, 212); font-size:20px; ">
+        But the way it called out to me was mezmerizing. I couldn't help but be caught up in its rumor and alarm. I was drawn, stretched across the canvas, made bare. 
+        I was re-defined, and then i was erased. A keen reader, it watches closely, pulling me closer, closer. like a book...reading me like a book.
+        </p>
+        <p class = " opensans left-align" style="  color:rgb(214, 212, 212); font-size:20px; ">
+          ...I saw it then as i see it now.
+          .</p>
+  
+
+    </div>
+  
+
+
+    </div>
+  
+  
+  <div class = "row"></div>
+  <div class = "row"></div>
+
+  <div class = "row"></div>
+
+  <div class = "row"></div>
+
+  <div class = "row"></div>
+  <div class = "row"></div>
+
+  <div class = "row"></div>
+
+  <div class = "row"></div>
+
+  <div class = "row"></div>
+
+  <div class = "row"></div>
+  <div class = "row"></div>
+
+  <div class = "row"></div>
+
+  <div class = "row"></div>
+
+  <div class = "row"></div>
+
+  <div class = "row"></div>
+
+  <div class = "row"></div>
+
+  <div class = "row"></div>
+
+  <div class = "row"></div>
+
+  <div class = "row"></div>
+
+  <div class = "row"></div>
+
+  <div class = "row"></div>
+
+  <div class = "row"></div>
+
+  <div class = "row"></div>
+
+
+  
+    </div>
+        <div class = "col s12">
+  
+          <div class = "row">
+  
+            <div class = "row">
+              <div class = "col s2"></div>
+              <div class = "col s8 right-align">
+                <br>
+                <i ng-if="volumeOn" ng-click="toggleMusic()" class = 'material-icons ' style="font-size:30px; position:absolute; top:740; right:100; color:rgb(214, 212, 212)">volume_up</i>
+                <i ng-if="!volumeOn" ng-click="toggleMusic()" class = 'material-icons ' style="font-size:30px; position:absolute; top:190; right:100; color:rgb(214, 212, 212)" >volume_off</i>
+  
+              </div>
+              <div class = "col s2"></div>
+  
+            </div>
+            <div class = "row"></div>
+            <div class = "row"></div>
+            <div class = "row"></div>
+            <div class = "row"></div>
+            <div class = "row"></div>
+            <div class = "row"></div>
+            <div class = "row"></div>
+            <div class = "row"></div>
+            <div class = "row"></div>
+            <div class = "row"></div>
+            <div class = "row"></div>
+            <div class = "row"></div>
+            <div class = "col s12 center-align">
+           
+              <div class = "row"></div>
+              <div class = "row"></div>
+         
+              <!--
+              <div class = "row">
+  
+              <div class = "col s4 center-align">
+  
+                <a ng-click="openMusicPage()" href="#" class="white-text">
+  
+                     <p class = "montserrat  flow-text white-text" style="text-decoration:underline;"  > MUSIC</p>
+  
+                </a>
+  
+              </div>
+  
+              <div class = "col s4 center-align">
+  
+                <a ng-click="openArtPage()" href="#" class="white-text">
+  
+                    <p class = "montserrat  flow-text white-text"style="text-decoration:underline;"   > ART</p>
+  
+                </a>
+  
+              </div>
+  
+              <div class = "col s4 center-align">
+  
+                <a ng-click="openShopPage()" href="#" class="white-text">
+  
+                    <p class = "montserrat  flow-text white-text"style="text-decoration:underline;"   > SHOP</p>
+  
+                </a>
+  
+              </div>
+  
+              <div class = "row"></div>
+              <div class = "row"></div>
+  
+              <div class = "animated fadeIn">
+  
+              <div class = "row " ng-show="musicPageOpen">
+                
+  
+                <div class="hide-on-med-and-down">
+                  <div class = "row">
+  
+                    <div class = 'col s2'>
+  
+                    </div>
+                
+                    <div class = 'col s8' ng-click="openAlbumBuy(2)" style="border:2px solid white;">
+                      <p class = "montserrat white-text"  style="font-size:30px;">LP 001 - It was the worst of times</p>
+                      <p class = "montserrat white-text"  style="font-size:30px;">It was the worst of times</p>
+                      <p class = "montserrat white-text"  style="font-size:30px;">Record/Vinyl + Digital Album</p>
+                      <o class = "montserrat white-text"  class ="flow-text">Wrap-around heavy weight archival letterpress cover with additional pressed details inside and out, archival art print, and several smaller archival text fragment prints
+  
+                        Includes unlimited streaming of Grid Of Points via the free Bandcamp app, plus high-quality download in MP3, FLAC and more.</o>
+                        <br>
+                        <br>
+  
+                    </div>
+           
+                    <div class = 'col s2'>                    
+  
+                    </div>
+                  </div>
+                  
+                  </div>
+                  <div class="hide-on-med-and-down">
+  
+                                  <div class = 'col s2'>
+  
+                                  </div>
+                                  <div class = 'col s2' ng-click="openAlbumBuy(1)">
+                                    <img src="./images/vv.jpg" class="responsive-img" > 
+  
+                                  </div>
+                                  <div class = 'col s2' ng-click="openAlbumBuy(2)">
+                                    <img src="./images/vvback.jpg" class="responsive-img" > 
+  
+                                  </div>
+                                  <div class = 'col s2' ng-click="openAlbumBuy(3)">                    
+                                    <img src="./images/shirt.jpg" class="responsive-img" > 
+                                  </div>
+                                  <div class = 'col s2' ng-click="openAlbumBuy(4)">
+  
+                                    <img src="./images/whiteshirt.jpg" class="responsive-img" > 
+  
+                                  </div>
+                                  <div class = 'col s2'>                    
+  
+                                  </div>
+  
+                  </div>
+  
+              </div>
+              <div class = "row " ng-show="musicPageOpen">
+  
+                <div class="hide-on-large-only">
+  
+                  <div class = "row">
+  
+                    <div class = 'col s2'>
+  
+                    </div>
+  
+                    <div class = 'col s8' ng-click="openAlbumBuy(1)">
+  
+                      <img src="./images/vv.jpg" class="responsive-img"> 
+  
+                    </div>
+  
+                    <div class = 'col s2'>                    
+  
+                    </div>
+  
+                  </div>
+  
+                  <div class = "row">
+  
+                    <div class = 'col s2'>
+  
+                    </div>
+                  
+                    <div class = 'col s8' ng-click="openAlbumBuy(2)">
+  
+                      <img src="./images/vvback.jpg" class="responsive-img" > 
+  
+                    </div>
+  
+                    <div class = 'col s2'>                    
+                    </div>
+                    
+                  </div>
+                  <div class = "row">
+  
+                    <div class = 'col s2'>
+  
+                    </div>
+                  
+                    <div class = 'col s8' ng-click="openAlbumBuy(3)">
+  
+                      <img src="./images/shirt.jpg" class="responsive-img" > 
+  
+                    </div>
+  
+                    <div class = 'col s2'>                    
+                    </div>
+                    
+                  </div>
+                  <div class = "row">
+  
+                    <div class = 'col s2'>
+  
+                    </div>
+                  
+                    <div class = 'col s8' ng-click="openAlbumBuy(4)">
+  
+                      <img src="./images/whiteshirt.jpg" class="responsive-img" > 
+  
+                    </div>
+  
+                    <div class = 'col s2'>                    
+                    </div>
+                    
+                  </div>
+  
+                </div>
+  
+              </div>
+            </div>
+              <div ng-show="albumBuyPageOpen" class = "animated fadeIn">
+  
+                  <div class = "col s1"></div>
+                  <div class = "col s6 left-align">                  
+                    <img src="./images/vv.jpg" class="responsive-img" > 
+                  </div>
+                  <div class = "col s5 left-align">
+                    <div class = 'col s12 left-align'>
+  
+                      <p class = "montserrat white-text"  style="font-size:30px;">LP 001 - It was the worst of times</p>
+                      <p class = "montserrat white-text"  style="font-size:30px;">It was the worst of times</p>
+                      <p class = "montserrat white-text"  style="font-size:30px;">Record/Vinyl + Digital Album</p>
+                      <o class = "montserrat white-text"  class ="flow-text">Wrap-around heavy weight archival letterpress cover with additional pressed details inside and out, archival art print, and several smaller archival text fragment prints
+  
+                        Includes unlimited streaming of Grid Of Points via the free Bandcamp app, plus high-quality download in MP3, FLAC and more.</o>
+                        <br>
+                        <br>
+                        <a class="btn-flat red ">Button</a>
+  
+                    </div>
+  
+                  </div>
+  
+              </div>
+              
+              <div ng-show="albumBuyPageOpen2" class = "animated fadeIn">
+  
+                <div class = "col s1"></div>
+                <div class = "col s6 left-align">                  
+                  <img src="./images/vvback.jpg" class="responsive-img" > 
+                </div>
+                <div class = "col s5 left-align">
+                  <div class = 'col s12 left-align'>
+  
+                    <p class = "montserrat white-text"  style="font-size:30px;">LP 001 - It was the worst of times</p>
+                    <p class = "montserrat white-text"  style="font-size:30px;">It was the worst of times</p>
+                    <p class = "montserrat white-text"  style="font-size:30px;">Record/Vinyl + Digital Album</p>
+                    <o class = "montserrat white-text"  class ="flow-text">Wrap-around heavy weight archival letterpress cover with additional pressed details inside and out, archival art print, and several smaller archival text fragment prints
+  
+                      Includes unlimited streaming of Grid Of Points via the free Bandcamp app, plus high-quality download in MP3, FLAC and more.</o>
+                      <br>
+                      <br>
+                      <a class="btn-flat red ">Button</a>
+  
+                  </div>
+  
+                </div>
+  
+            </div>
+            <div ng-show="albumBuyPageOpen3" class = "animated fadeIn">
+  
+              <div class = "col s1"></div>
+              <div class = "col s6 left-align">                  
+                <img src="./images/shirt.jpg" class="responsive-img" > 
+              </div>
+              <div class = "col s5 left-align">
+                <div class = 'col s12 left-align'>
+  
+                  <p class = "montserrat white-text"  style="font-size:30px;">LP 001 - It was the worst of times</p>
+                  <p class = "montserrat white-text"  style="font-size:30px;">It was the worst of times</p>
+                  <p class = "montserrat white-text"  style="font-size:30px;">Record/Vinyl + Digital Album</p>
+                  <o class = "montserrat white-text"  class ="flow-text">Wrap-around heavy weight archival letterpress cover with additional pressed details inside and out, archival art print, and several smaller archival text fragment prints
+  
+                    Includes unlimited streaming of Grid Of Points via the free Bandcamp app, plus high-quality download in MP3, FLAC and more.</o>
+                    <br>
+                    <br>
+                    <a class="btn-flat red ">Button</a>
+  
+                </div>
+  
+              </div>
+  
+          </div>
+          <div ng-show="albumBuyPageOpen4" class = "animated fadeIn">
+  
+            <div class = "col s1"></div>
+            <div class = "col s6 left-align">                  
+              <img src="./images/whiteshirt.jpg" class="responsive-img" > 
+            </div>
+            <div class = "col s5 left-align">
+              <div class = 'col s12 left-align'>
+  
+                <p class = "montserrat white-text" style="font-size:30px;">LP 001 - It was the worst of times</p>
+                <p class = "montserrat white-text" style="font-size:30px;">It was the worst of times</p>
+                <p class = "montserrat white-text" style="font-size:30px;">Record/Vinyl + Digital Album</p>
+                <o class = "montserrat white-text" class ="flow-text">Wrap-around heavy weight archival letterpress cover with additional pressed details inside and out, archival art print, and several smaller archival text fragment prints
+  
+                  Includes unlimited streaming of Grid Of Points via the free Bandcamp app, plus high-quality download in MP3, FLAC and more.</o>
+                  <br>
+                  <br>
+                  <a class="btn-flat red ">Button</a>
+  
+              </div>
+  
+            </div>
+  
+        </div>
+  
+              </div>-->
+  
+              </div>
+  
+              
+            </div>
+     
+       
+          
+         
+  
+          </div>
+  
+        </div>
+    </div>
+    <div ng-if="homePageOpen  " class="row animated fadeIn">
+  
+      <div class = "col s12 center-align" >
+        
+      
+    <div class = "col s12 ">
+
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+    
+      <div class = "row">
+  
+          <div class = "col s4">
+        
+          </div>
+          <div class = "col s4">
+        
+          </div>
+          <div class = "col s4 left-align">
+            <br>
+            <br>
+            
+            <h1 class="montserrat white-text" (click)="testButton()"style=" position:absolute;z-index:100;left:49%;color:rgb(214, 212, 212);left:400; " >OHRHA      
+              <img src="./images/ohrhawhite.svg" style='position:absolute; z-index:9; height:200px; width:100px;  opacity:.3;right:65; top:-73;'>
+            </h1>
+
+          </div>
+
+      </div>
+  
+  <div class = "row"></div>
+  <div class = "row"></div>
+  <div class = "row"></div>
+  <div class = "row"></div>
+
+  <div class="hide-on-small">
+     
+      <div class = "col s3 center-align" >         
+        <a href="#" ng-if="homePageOpen"ng-click="openHomePage()"class=""style="position: absolute;right:985; top:720; color:rgb(214, 212, 212);" > <h4 class="montserrat  small" style=" font-size:30px;" style=" font-size:30px;">HOME</h4></a>
+        <a href="#" ng-if="!homePageOpen" ng-click="openHomePage()"style="position: absolute;right:985; top:720; color:rgb(214, 212, 212);" > <h4 class="montserrat small" style=" font-size:30px;color:rgb(214, 212, 212);" style=" font-size:30px;">HOME?</h4></a>
+
+
+      </div>
+      <div class = "col s3 right-align">         
+        <a href="#" ng-if="lightsPageOpen" ng-click="openLightsPage()"class="white-text"style="position: absolute;right:750; top:720" > <h4 class="montserrat white-text small" style=" font-size:30px;" style=" font-size:30px;">LIGHT</h4></a>
+        <a href="#" ng-if="!lightsPageOpen" ng-click="openLightsPage()"class="red-text"style="position: absolute;right:750; top:720" > <h4 class="montserrat red-text small" style=" font-size:30px;" style=" font-size:30px;">LIGHT</h4></a>
+
+      </div>
+      <div class = "col s3 center-align">         
+        <a href="#" ng-click="openSoundPage()"class="red-text" ng-click="openShopPage()"style="position: absolute; top:720; right:490" > <h4 class="montserrat red-text small" style=" font-size:30px;" style=" font-size:30px;">SOUND</h4></a>
+      </div>
+      <div class = "col s3 left-align">         
+        <div style="position:absolute;  z-index:1000; width:1200px; border:1px solid white; top :780;left:1470;"><span></span></div>
+        <a href="#" ng-click="openContactPage()"  class="white-text"style="position: absolute; top:720; right:220" > <h4 class="montserrat red-text small" style=" font-size:30px;" style=" font-size:30px;">CONTACT</h4></a>
+      </div>
+  
+
+  </div>
+      <div class = "row">
+      <div class = "col s6 left-align">    
+        <br>
+        <br>
+        <br>
+        
+      <div class = "row">
+        
+      </div>
+     
+    </div>
+    <div class = "col s6 left-align">    
+      <br>
+      <br>
+      <br>
+
+      <div style=" position:absolute; left:1270;">
+        
+        <p class = " opensans black-text" style=" font-size:20px; color:rgb(214, 212, 212)">Oregon-based musician and visual artist Liz Harris has been releasing music under the name Grouper since 2005. Over the years her sound has spanned shades of noise, folk, drone, pop, and ambient, channeled with poignant emotional honesty and a uniquely melancholic mood. Her most recent album, Grid Of Points, pairs skeletal piano with stark vocal harmonies and vulnerable silences, inspired by "the idea that something is missing or cold." Her stateside live appearances are rare but revelatory, obscured impressions of mortality, melody, and the unseen.</p>
+      
+      </div>
+
+      <div class = "row">
+      
+    </div>
+   
+  </div>
+  
+      </div>
+  
+  
+  
+  
+    </div>
+        <div class = "col s12">
+  
+          <div class = "row">
+  
+            <div class = "row">
+              <div class = "col s2"></div>
+              <div class = "col s8 right-align">
+                <br>
+                <i ng-if="volumeOn" ng-click="toggleMusic()" class = 'material-icons ' style="font-size:30px; position:absolute; top:740; right:100; color:rgb(214, 212, 212)">volume_up</i>
+                <i ng-if="!volumeOn" ng-click="toggleMusic()" class = 'material-icons ' style="font-size:30px; position:absolute; top:740; right:100; color:rgb(214, 212, 212)" >volume_off</i>
+  
+              </div>
+              <div class = "col s2"></div>
+  
+            </div>
+            <div class = "row"></div>
+            <div class = "row"></div>
+            <div class = "row"></div>
+            <div class = "row"></div>
+            <div class = "row"></div>
+            <div class = "row"></div>
+            <div class = "row"></div>
+            <div class = "row"></div>
+            <div class = "row"></div>
+            <div class = "row"></div>
+            <div class = "row"></div>
+            <div class = "row"></div>
+            <div class = "col s12 center-align">
+           
+              <div class = "row"></div>
+              <div class = "row"></div>
+         
+              <!--
+              <div class = "row">
+  
+              <div class = "col s4 center-align">
+  
+                <a ng-click="openMusicPage()" href="#" class="white-text">
+  
+                     <p class = "montserrat  flow-text white-text" style="text-decoration:underline;"  > MUSIC</p>
+  
+                </a>
+  
+              </div>
+  
+              <div class = "col s4 center-align">
+  
+                <a ng-click="openArtPage()" href="#" class="white-text">
+  
+                    <p class = "montserrat  flow-text white-text"style="text-decoration:underline;"   > ART</p>
+  
+                </a>
+  
+              </div>
+  
+              <div class = "col s4 center-align">
+  
+                <a ng-click="openShopPage()" href="#" class="white-text">
+  
+                    <p class = "montserrat  flow-text white-text"style="text-decoration:underline;"   > SHOP</p>
+  
+                </a>
+  
+              </div>
+  
+              <div class = "row"></div>
+              <div class = "row"></div>
+  
+              <div class = "animated fadeIn">
+  
+              <div class = "row " ng-show="musicPageOpen">
+                
+  
+                <div class="hide-on-med-and-down">
+                  <div class = "row">
+  
+                    <div class = 'col s2'>
+  
+                    </div>
+                
+                    <div class = 'col s8' ng-click="openAlbumBuy(2)" style="border:2px solid white;">
+                      <p class = "montserrat white-text"  style="font-size:30px;">LP 001 - It was the worst of times</p>
+                      <p class = "montserrat white-text"  style="font-size:30px;">It was the worst of times</p>
+                      <p class = "montserrat white-text"  style="font-size:30px;">Record/Vinyl + Digital Album</p>
+                      <o class = "montserrat white-text"  class ="flow-text">Wrap-around heavy weight archival letterpress cover with additional pressed details inside and out, archival art print, and several smaller archival text fragment prints
+  
+                        Includes unlimited streaming of Grid Of Points via the free Bandcamp app, plus high-quality download in MP3, FLAC and more.</o>
+                        <br>
+                        <br>
+  
+                    </div>
+           
+                    <div class = 'col s2'>                    
+  
+                    </div>
+                  </div>
+                  
+                  </div>
+                  <div class="hide-on-med-and-down">
+  
+                                  <div class = 'col s2'>
+  
+                                  </div>
+                                  <div class = 'col s2' ng-click="openAlbumBuy(1)">
+                                    <img src="./images/vv.jpg" class="responsive-img" > 
+  
+                                  </div>
+                                  <div class = 'col s2' ng-click="openAlbumBuy(2)">
+                                    <img src="./images/vvback.jpg" class="responsive-img" > 
+  
+                                  </div>
+                                  <div class = 'col s2' ng-click="openAlbumBuy(3)">                    
+                                    <img src="./images/shirt.jpg" class="responsive-img" > 
+                                  </div>
+                                  <div class = 'col s2' ng-click="openAlbumBuy(4)">
+  
+                                    <img src="./images/whiteshirt.jpg" class="responsive-img" > 
+  
+                                  </div>
+                                  <div class = 'col s2'>                    
+  
+                                  </div>
+  
+                  </div>
+  
+              </div>
+              <div class = "row " ng-show="musicPageOpen">
+  
+                <div class="hide-on-large-only">
+  
+                  <div class = "row">
+  
+                    <div class = 'col s2'>
+  
+                    </div>
+  
+                    <div class = 'col s8' ng-click="openAlbumBuy(1)">
+  
+                      <img src="./images/vv.jpg" class="responsive-img"> 
+  
+                    </div>
+  
+                    <div class = 'col s2'>                    
+  
+                    </div>
+  
+                  </div>
+  
+                  <div class = "row">
+  
+                    <div class = 'col s2'>
+  
+                    </div>
+                  
+                    <div class = 'col s8' ng-click="openAlbumBuy(2)">
+  
+                      <img src="./images/vvback.jpg" class="responsive-img" > 
+  
+                    </div>
+  
+                    <div class = 'col s2'>                    
+                    </div>
+                    
+                  </div>
+                  <div class = "row">
+  
+                    <div class = 'col s2'>
+  
+                    </div>
+                  
+                    <div class = 'col s8' ng-click="openAlbumBuy(3)">
+  
+                      <img src="./images/shirt.jpg" class="responsive-img" > 
+  
+                    </div>
+  
+                    <div class = 'col s2'>                    
+                    </div>
+                    
+                  </div>
+                  <div class = "row">
+  
+                    <div class = 'col s2'>
+  
+                    </div>
+                  
+                    <div class = 'col s8' ng-click="openAlbumBuy(4)">
+  
+                      <img src="./images/whiteshirt.jpg" class="responsive-img" > 
+  
+                    </div>
+  
+                    <div class = 'col s2'>                    
+                    </div>
+                    
+                  </div>
+  
+                </div>
+  
+              </div>
+            </div>
+              <div ng-show="albumBuyPageOpen" class = "animated fadeIn">
+  
+                  <div class = "col s1"></div>
+                  <div class = "col s6 left-align">                  
+                    <img src="./images/vv.jpg" class="responsive-img" > 
+                  </div>
+                  <div class = "col s5 left-align">
+                    <div class = 'col s12 left-align'>
+  
+                      <p class = "montserrat white-text"  style="font-size:30px;">LP 001 - It was the worst of times</p>
+                      <p class = "montserrat white-text"  style="font-size:30px;">It was the worst of times</p>
+                      <p class = "montserrat white-text"  style="font-size:30px;">Record/Vinyl + Digital Album</p>
+                      <o class = "montserrat white-text"  class ="flow-text">Wrap-around heavy weight archival letterpress cover with additional pressed details inside and out, archival art print, and several smaller archival text fragment prints
+  
+                        Includes unlimited streaming of Grid Of Points via the free Bandcamp app, plus high-quality download in MP3, FLAC and more.</o>
+                        <br>
+                        <br>
+                        <a class="btn-flat red ">Button</a>
+  
+                    </div>
+  
+                  </div>
+  
+              </div>
+              
+              <div ng-show="albumBuyPageOpen2" class = "animated fadeIn">
+  
+                <div class = "col s1"></div>
+                <div class = "col s6 left-align">                  
+                  <img src="./images/vvback.jpg" class="responsive-img" > 
+                </div>
+                <div class = "col s5 left-align">
+                  <div class = 'col s12 left-align'>
+  
+                    <p class = "montserrat white-text"  style="font-size:30px;">LP 001 - It was the worst of times</p>
+                    <p class = "montserrat white-text"  style="font-size:30px;">It was the worst of times</p>
+                    <p class = "montserrat white-text"  style="font-size:30px;">Record/Vinyl + Digital Album</p>
+                    <o class = "montserrat white-text"  class ="flow-text">Wrap-around heavy weight archival letterpress cover with additional pressed details inside and out, archival art print, and several smaller archival text fragment prints
+  
+                      Includes unlimited streaming of Grid Of Points via the free Bandcamp app, plus high-quality download in MP3, FLAC and more.</o>
+                      <br>
+                      <br>
+                      <a class="btn-flat red ">Button</a>
+  
+                  </div>
+  
+                </div>
+  
+            </div>
+            <div ng-show="albumBuyPageOpen3" class = "animated fadeIn">
+  
+              <div class = "col s1"></div>
+              <div class = "col s6 left-align">                  
+                <img src="./images/shirt.jpg" class="responsive-img" > 
+              </div>
+              <div class = "col s5 left-align">
+                <div class = 'col s12 left-align'>
+  
+                  <p class = "montserrat white-text"  style="font-size:30px;">LP 001 - It was the worst of times</p>
+                  <p class = "montserrat white-text"  style="font-size:30px;">It was the worst of times</p>
+                  <p class = "montserrat white-text"  style="font-size:30px;">Record/Vinyl + Digital Album</p>
+                  <o class = "montserrat white-text"  class ="flow-text">Wrap-around heavy weight archival letterpress cover with additional pressed details inside and out, archival art print, and several smaller archival text fragment prints
+  
+                    Includes unlimited streaming of Grid Of Points via the free Bandcamp app, plus high-quality download in MP3, FLAC and more.</o>
+                    <br>
+                    <br>
+                    <a class="btn-flat red ">Button</a>
+  
+                </div>
+  
+              </div>
+  
+          </div>
+          <div ng-show="albumBuyPageOpen4" class = "animated fadeIn">
+  
+            <div class = "col s1"></div>
+            <div class = "col s6 left-align">                  
+              <img src="./images/whiteshirt.jpg" class="responsive-img" > 
+            </div>
+            <div class = "col s5 left-align">
+              <div class = 'col s12 left-align'>
+  
+                <p class = "montserrat white-text" style="font-size:30px;">LP 001 - It was the worst of times</p>
+                <p class = "montserrat white-text" style="font-size:30px;">It was the worst of times</p>
+                <p class = "montserrat white-text" style="font-size:30px;">Record/Vinyl + Digital Album</p>
+                <o class = "montserrat white-text" class ="flow-text">Wrap-around heavy weight archival letterpress cover with additional pressed details inside and out, archival art print, and several smaller archival text fragment prints
+  
+                  Includes unlimited streaming of Grid Of Points via the free Bandcamp app, plus high-quality download in MP3, FLAC and more.</o>
+                  <br>
+                  <br>
+                  <a class="btn-flat red ">Button</a>
+  
+              </div>
+  
+            </div>
+  
+        </div>
+  
+              </div>-->
+  
+              </div>
+  
+              
+            </div>
+     
+       
+          
+         
+  
+          </div>
+  
+        </div>
+    </div>
+
+
+  </div>
       <!-- DESKTOP SITE-->
 
 

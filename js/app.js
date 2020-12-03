@@ -21,7 +21,7 @@ console.log("OY")
         $scope.contactPageOpen = false;
         $scope.zoomPageOpen = false;
         $scope.volumeOn = false;
-
+        $scope.zoomPageOpen = false;
 
         $scope.audio = new Audio('../audio/ui_tap-variant-01.wav')
         $scope.bgaudio = new Audio('../images/web.wav')
@@ -50,13 +50,14 @@ console.log("OY")
         }
 
         $scope.closeZoomPage = function(){
-            $scope.audio.play()
+            //$scope.audio.play()
 
             if(!$scope.zoomPageOpen){
 
                 $scope.zoomPageOpen = true;
             }else{
-$scope.zoomPageOpen = false;
+
+                $scope.zoomPageOpen = false;
 
             }
         }
