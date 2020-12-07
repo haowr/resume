@@ -256,7 +256,6 @@ video{
   background:transparent;
   backface-visibility: hidden;
 perspective: 1000;overflow:hidden;
-border:10px solid black;
  }
 #sidebarlinks{
     position: fixed;
