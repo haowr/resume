@@ -254,6 +254,8 @@ video{
   
   vertical-align: bottom;
   background:transparent;
+  backface-visibility: hidden;
+perspective: 1000;
  }
 #sidebarlinks{
     position: fixed;
