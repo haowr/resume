@@ -99,33 +99,7 @@ console.log("OY")
                 }
 
         }
-        $scope.openSoundPage = function(){
 
-
-            $scope.audio.play()
-            if(!$scope.soundOpen){
-
-                if( $scope.shopOpen){
-
-                    $scope.homePageOpen = true;
-                    $scope.shopOpen = false;
-
-                }
-
-            }else{
-
-                if( !$scope.shopOpen){
-
-                    $scope.homePageOpen = false;
-                    $scope.shopOpen = true;
-
-                    console.log("should run")
-
-                }
-
-            }
-
-        }
         $scope.openSoundPage = function(){
 
 
