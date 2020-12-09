@@ -637,7 +637,7 @@
       <div style="position:absolute; top:220px;">
 
         <div class = "col s12 center-align" >
-          
+
           <div class = "col s12 ">
       
             <br>
@@ -699,8 +699,6 @@
             <div class = "col s3 center-align" >         
               <a href="#" ng-if="homePageOpen"ng-click="openHomePage()"class=""style=" color:rgb(214, 212, 212);" > <h4 class="montserrat  small" style=" font-size:30px;" style=" font-size:30px;">HOME</h4></a>
               <a href="#" ng-if="!homePageOpen" ng-click="openHomePage()" class="red-text" > <h4 class="montserrat small" style=" font-size:30px;" style=" font-size:30px;">HOME</h4></a>
-      
-      
             </div>
             <div class = "col s3 center-align">         
               <a href="#" ng-if="lightsPageOpen" ng-click="openLightsPage()"class="white-text"style="" > <h4 class="montserrat white-text small" style=" font-size:30px;" style=" font-size:30px;">LIGHT</h4></a>
@@ -725,13 +723,27 @@
       <div class = " col s4">
         <br>
         <br>
-        <img src="./images/ii.png" style="width:280px; height:160px;border:2px solid rgb(214, 212, 212); ">
+        <img src="./images/ii.png" ng-click="openZoomPage()"style="width:280px; height:160px;border:2px solid rgb(214, 212, 212); ">
       </div>
 
       <div class = " col s4">
       </div>
 
       <div class = " col s4">
+      </div>
+      <div class = "col s12">
+        <div ng-if="!zoomPageOpen"class="animated fadeIn">
+        
+          
+          <a href="#" class="white-text"> <i class = "material-icons white-text" ng-click="closeZoomPage()" style="font-size:40px;position:absolute; z-index:1; top:380;right:50">clear</i></a>
+ 
+           <img  class="responsive-img" style = "width:1250px; height:800px; z-index:1; "src="./images/ii.png">
+     
+ 
+         
+     
+ 
+          </div>
       </div>
       
         </div>
