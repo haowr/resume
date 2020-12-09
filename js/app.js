@@ -82,6 +82,7 @@ console.log("OY")
                 }
 
         }
+        
         $scope.openShopPage = function(){
 
 
@@ -116,6 +117,7 @@ console.log("OY")
             }
 
         }
+
         $scope.openLightsPage = function(){
 
           //  $scope.audio.play()
@@ -129,6 +131,7 @@ console.log("OY")
             }
 
         }
+
         $scope.openHomePage = function(){
 
 
@@ -142,6 +145,8 @@ console.log("OY")
             }
 
         }
+
+
     }]);
 
 
