@@ -44,12 +44,12 @@
 
 <video ng-if="homePageOpen" ng-click="test()" class="animated fadeIn" style="position: absolute ; border:25px solid rgb(6, 6, 6);right:0;z-index:0 
   ; top:0" id="videoBG"  autoplay muted loop>
-   <source src="./images/yor.mp4" type="video/mp4">
+   <source src="./images/eyelong.mp4" type="video/mp4">
  </video>  
- <video ng-if="soundOpen" ng-click="test()" class="animated fadeIn" style="position:fixed ;left:0; top:0;border:25px solid rgb(6, 6, 6); " id="videoBG"  autoplay muted loop>
+ <video ng-if="soundOpen" ng-click="test()" class="animated fadeIn" style="position:absolute ;left:0; top:0;border:25px solid rgb(6, 6, 6); " id="videoBG"  autoplay muted loop>
    <source src="./images/eyelong.mp4" type="video/mp4">
  </video>
- <video ng-if="lightsPageOpen" ng-click="test()" class="animated fadeIn" style="position: fixed;border:25px solid rgb(6, 6, 6);
+ <video ng-if="lightsPageOpen" ng-click="test()" class="animated fadeIn" style="position: absolute;border:25px solid rgb(6, 6, 6);
   ;left:-460; top:0" id="videoBG"  autoplay muted loop>
    <source src="./images/eyelong.mp4" type="video/mp4">
  </video>  
@@ -146,9 +146,16 @@
           
       
             <div class="col s12" style="  z-index:1000;  border:1px solid white; "><span></span></div>
-            <div class = 'col s12 center-align'><p class="opensans flow-text " style="color:rgb(214, 212, 212);">Oregon-based musician and visual artist Liz Harris has been releasing music under the name Grouper since 2005. Over the years her sound has spanned shades of noise, folk, drone, pop, and ambient, channeled with poignant emotional honesty and a uniquely melancholic mood. </p></div>
+
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row"></div>
+            <div class="row"></div>
+
+            <div class = 'col s12 center-align'><img src="./images/ohrhawhitereal.svg" style="height:200px; width:100px;"></div>
             <div class = "col s12 center-align">
-              <div class = "row">
+
+              <div class = "row" >
 
                 <div class = "col s1"></div>
 
@@ -172,11 +179,15 @@
                 </div>
 
               </div>
+
+     
               <div class = "row">
+
+
                 <div class = "col s1"></div>
 
                 <div class = "col s2 ">
-                  <i class="fa fa-spotify white-text " aria-hidden="true" style='font-size:50px;;'></i>
+                  <i class="fa fa-spotify white-text " aria-hidden="true" style="font-size:50px;"></i>
 
                 </div>
 
@@ -204,6 +215,14 @@
                 
               </div>
 
+              <div class = "row">
+
+                <div class = "col s2"></div>
+                <div class = "col s8" style="border:2px solid rgb(214, 212, 212)"></div>
+                <div class = "col s2"></div>
+
+
+              </div>
         
             </div>
 
@@ -237,11 +256,13 @@
         
         
           </div>
-              <div class = "col s12">
+
+          <div class = "col s12">
         
                 <div class = "row">
         
                   <div class = "row">
+
                     <div class = "col s2"></div>
                     <div class = "col s8 right-align">
                       <br>
@@ -252,388 +273,17 @@
                     <div class = "col s2"></div>
         
                   </div>
-                  <div class = "row"></div>
-                  <div class = "row"></div>
-                  <div class = "row"></div>
-                  <div class = "row"></div>
-                  <div class = "row"></div>
-                  <div class = "row"></div>
-                  <div class = "row"></div>
-                  <div class = "row"></div>
-                  <div class = "row"></div>
-                  <div class = "row"></div>
-                  <div class = "row"></div>
-                  <div class = "row"></div>
-                  <div class = "col s12 center-align">
-                
-                    <div class = "row"></div>
-                    <div class = "row"></div>
-              
-                    </div>
-        
                     
-                  </div>
-          
-            
-                
-              
-        
                 </div>
-        
-        </div>
-
-      </div>
-
-    </div>
-
-    <div ng-if="lightsPageOpen " class="row animated fadeIn">
-  
-      <div style="position:absolute; top:220px;">
-
-      <div class = "col s12 center-align" >
-        
-        <div class = "col s12 ">
-    
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-        
-          <div class = "row">
-      
-              <div class = "col s4">
-            
-              </div>
-              <div class = "col s4">
-
-                <h1 class="montserrat white-text" (click)="testButton()"style=" color:rgb(214, 212, 212); " >OHRHA      
-                  <img src="./images/ohrhawhite.svg" style=' position:absolute; z-index:9; height:200px; width:100px; opacity:.5;right:435;top:500'>
-                </h1>
-    
-              </div>
-              <div class = "col s4 left-align">
-                <br>
-                <br>
-                
-              
-              </div>
-    
-          </div>
-      
-      <div class = "row"></div>
-      <div class = "row"></div>
-      <div class = "row"></div>
-      <div class = "row"></div>
-    
-      <div >
-         
-          <div class = "col s3 center-align" >         
-            <a href="#" ng-if="homePageOpen"ng-click="openHomePage()"class=""style=" color:rgb(214, 212, 212);" > <h4 class="montserrat  small" style=" font-size:30px;" style=" font-size:30px;">HOME</h4></a>
-            <a href="#" ng-if="!homePageOpen" ng-click="openHomePage()" class="red-text" > <h4 class="montserrat small" style=" font-size:30px;" style=" font-size:30px;">HOME</h4></a>
-    
-    
-          </div>
-          <div class = "col s3 center-align">         
-            <a href="#" ng-if="lightsPageOpen" ng-click="openLightsPage()"class="white-text"style="" > <h4 class="montserrat white-text small" style=" font-size:30px;" style=" font-size:30px;">LIGHT</h4></a>
-            <a href="#" ng-if="!lightsPageOpen" ng-click="openLightsPage()"class="red-text"style="" > <h4 class="montserrat red-text small" style=" font-size:30px;" style=" font-size:30px;">LIGHT</h4></a>
-    
-          </div>
-          <div class = "col s3 center-align">         
-            <a href="#" ng-click="openSoundPage()"class="red-text" ng-click="openShopPage()" > <h4 class="montserrat red-text small" style=" font-size:30px;" style=" font-size:30px;">SOUND</h4></a>
-          </div>
-          <div class = "col s3 center-align">     
-    
-            <a href="#" ng-click="openContactPage()"  class="white-text" > <h4 class="montserrat red-text small" style=" font-size:30px;" style=" font-size:30px;">CONTACT</h4></a>
           
           </div>
         
-    
-          <div class="col s12" style="  z-index:1000;  border:1px solid white; "><span></span></div>
-       
-          
-
-          
-    <div class = " col s4">
-      <br>
-      <br>
-      <img src="./images/ii.png" style="width:280px; height:160px;border:2px solid rgb(214, 212, 212); ">
-    </div>
-
-    <div class = " col s4">
-    </div>
-
-    <div class = " col s4">
-    </div>
-    
-      </div>
-          <div class = "row">
-          <div class = "col s6 left-align">    
-            <br>
-            <br>
-            <br>
-            
-          <div class = "row">
-            
-          </div>
-         
         </div>
-        <div class = "col s6 left-align">    
-          <br>
-          <br>
-          <br>
-    
-     
-          <div class = "row">
-          
-        </div>
-       
-      </div>
-      
-          </div>
-      
-      
-      
-      
-        </div>
-            <div class = "col s12">
-      
-              <div class = "row">
-      
-                <div class = "row">
-                  <div class = "col s2"></div>
-                  <div class = "col s8 right-align">
-                    <br>
-                    <i ng-if="volumeOn" ng-click="toggleMusic()" class = 'material-icons ' style="font-size:30px; position:absolute; top:740; right:100; color:rgb(214, 212, 212)">volume_up</i>
-                    <i ng-if="!volumeOn" ng-click="toggleMusic()" class = 'material-icons ' style="font-size:30px; position:absolute; top:740; right:100; color:rgb(214, 212, 212)" >volume_off</i>
-      
-                  </div>
-                  <div class = "col s2"></div>
-      
-                </div>
-                <div class = "row"></div>
-                <div class = "row"></div>
-                <div class = "row"></div>
-                <div class = "row"></div>
-                <div class = "row"></div>
-                <div class = "row"></div>
-                <div class = "row"></div>
-                <div class = "row"></div>
-                <div class = "row"></div>
-                <div class = "row"></div>
-                <div class = "row"></div>
-                <div class = "row"></div>
-                <div class = "col s12 center-align">
-               
-                  <div class = "row"></div>
-                  <div class = "row"></div>
-             
-                  </div>
-      
-                  
-                </div>
-         
-           
-              
-             
-      
-              </div>
-      
-      </div>
 
-    </div>
-    </div>
-
-    <div ng-if="soundOpen " class="row animated fadeIn">
-  
-      <div style="position:absolute; top:220px;">
-
-      <div class = "col s12 center-align" >
-        
-        <div class = "col s12 ">
-    
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-        
-          <div class = "row">
-      
-              <div class = "col s4">
-            
-              </div>
-              <div class = "col s4">
-
-                <h1 class="montserrat white-text" (click)="testButton()"style=" color:rgb(214, 212, 212); " >OHRHA      
-                  <img src="./images/ohrhawhite.svg" style=' position:absolute; z-index:9; height:200px; width:100px; opacity:.3;right:435;top:500'>
-                </h1>
-    
-              </div>
-              <div class = "col s4 left-align">
-                <br>
-                <br>
-                
-              
-              </div>
-    
-          </div>
-      
-      <div class = "row"></div>
-      <div class = "row"></div>
-      <div class = "row"></div>
-      <div class = "row"></div>
-    
-      <div >
-         
-          <div class = "col s3 center-align" >         
-            <a href="#" ng-if="homePageOpen"ng-click="openHomePage()"class="" > <h4 class="montserrat  small" style=" font-size:30px;" style=" font-size:30px;">HOME</h4></a>
-            <a href="#" ng-if="!homePageOpen" ng-click="openHomePage()" class= 'red-text' > <h4 class="montserrat small" style=" font-size:30px;" style=" font-size:30px;">HOME</h4></a>
-    
-    
-          </div>
-          <div class = "col s3 center-align">         
-            <a href="#" ng-if="lightsPageOpen" ng-click="openLightsPage()"class="white-text"style="" > <h4 class="montserrat white-text small" style=" font-size:30px;" style=" font-size:30px;">LIGHT</h4></a>
-            <a href="#" ng-if="!lightsPageOpen" ng-click="openLightsPage()"class="red-text"style="" > <h4 class="montserrat red-text small" style=" font-size:30px;" style=" font-size:30px;">LIGHT</h4></a>
-    
-          </div>
-          <div class = "col s3 center-align">         
-            <a href="#" ng-click="openSoundPage()"ng-click="openShopPage()" > <h4 class="montserrat  small" style=" font-size:30px; color:rgb(214, 212, 212);" style=" font-size:30px;">SOUND</h4></a>
-          </div>
-          <div class = "col s3 center-align">     
-    
-            <a href="#" ng-click="openContactPage()"  class="white-text" > <h4 class="montserrat red-text small" style=" font-size:30px;" style=" font-size:30px;">CONTACT</h4></a>
-          
-          </div>
-        
-    
-          <div class="col s12" style="  z-index:1000;  border:1px solid white; "><span></span></div>
-          <div class ="col s12 center-align">
-            <br>
-            <br>
-          <audio controls>
-            <source src="horse.ogg" type="audio/ogg">
-            <source src="horse.mp3" type="audio/mpeg">
-          Your browser does not support the audio element.
-          </audio>
-          </div>
-      </div>
-          <div class = "row">
-          <div class = "col s6 left-align">    
-            <br>
-            <br>
-            <br>
-            
-          <div class = "row">
-            
-          </div>
-         
-        </div>
-        <div class = "col s6 left-align">    
-          <br>
-          <br>
-          <br>
-    
-     
-          <div class = "row">
-          
-        </div>
-       
-      </div>
-      
-          </div>
-      
-      
-      
-      
-        </div>
-            <div class = "col s12">
-      
-              <div class = "row">
-      
-                <div class = "row">
-                  <div class = "col s2"></div>
-
-                  <div class = "col s8 right-align">
-                    <br>
-                    <i ng-if="volumeOn" ng-click="toggleMusic()" class = 'material-icons ' style="font-size:30px; position:absolute; top:740; right:100; color:rgb(214, 212, 212)">volume_up</i>
-                    <i ng-if="!volumeOn" ng-click="toggleMusic()" class = 'material-icons ' style="font-size:30px; position:absolute; top:740; right:100; color:rgb(214, 212, 212)" >volume_off</i>
-      
-                  </div>
-
-                  <div class = "col s2"></div>
-      
-                </div>
-
-                <div class = "row"></div>
-                <div class = "row"></div>
-                <div class = "row"></div>
-                <div class = "row"></div>
-                <div class = "row"></div>
-                <div class = "row"></div>
-                <div class = "row"></div>
-                <div class = "row"></div>
-                <div class = "row"></div>
-                <div class = "row"></div>
-                <div class = "row"></div>
-                <div class = "row"></div>
-                <div class = "col s12 center-align">
-                <div class = "row"></div>
-                <div class = "row"></div>
-             
-                </div>
-       
-              </div>
-        
-            </div>
-      
       </div>
 
     </div>
 
-    </div>
 
     <div ng-if="homePageOpen  " class="row animated fadeIn">
   
@@ -728,9 +378,9 @@
           
           <div class = 'col s12 left-align'>
 
-            <p class="opensans flow-text " style="color:rgb(214, 212, 212);">
+            <p class="opensans flow-text " style="color:rgb(214, 212, 212);font-size: 26px;">
 
-              Good Morning!
+              Hello!
             
             </p>
 
@@ -738,9 +388,9 @@
 
           <div class = 'col s12 center-align'>
 
-            <p class="opensans flow-text " style="color:rgb(214, 212, 212);">
+            <p class="opensans flow-text " style="color:rgb(214, 212, 212); font-size: 26px;">
               
-              Thank-you for joining us today. My friend is very happy to have your attention, in fact, he seems to craves it!? smh...
+              Thank-you for joining us today. My friend is very happy to have your attention, in fact, he seems to crave it!? smh...
 
               My man here has been creating music of a most hypnotic nature since as long as i can remember. Creating worlds, and emotional vessels into which one can "Wash their minds", as it were.
 
@@ -748,7 +398,7 @@
 
               man itself.
            </p>
-            <p class="opensans flow-text " style="color:rgb(214, 212, 212);">
+            <p class="opensans flow-text " style="color:rgb(214, 212, 212);font-size: 26px;">
               
     ..Its cool, i guess.
            </p>
@@ -1119,8 +769,9 @@
     </div>
 
 
-  </div>
+    </div>
 
+  
 
   </div>
        
