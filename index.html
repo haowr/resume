@@ -37,23 +37,33 @@
   <script src="/js/angular-chart.js"></script>
   <script src="/js/app.js" type="text/javascript"></script>
   <script src="/js/routes.js" type="text/javascript"></script>
+  <script src="https://unpkg.com/seethru@4/dist/seeThru.min.js"></script>
+
 
   <!-- JavaScript Dependencies -->
 
 </head>
-
-<video ng-if="homePageOpen" ng-click="test()" class="animated fadeIn"     style="position:absolute; border:25px solid rgb(6, 6, 6);right:0;z-index:0 ; top:0" id="videoBG"  autoplay muted loop>
+<!--
+<video ng-if="homePageOpen" ng-click="test()" class="animated fadeIn"     id="videoBG"  autoplay muted loop>
+   <source src="./images/eyelong.mp4" type="video/mp4">
+ </video>  -->
+ <!--
+ <video ng-if="soundOpen" ng-click="test()" class="animated fadeIn" style="position:fixed; border:25px solid rgb(6, 6, 6); z-index:0; right:-500; top:0;opacity:0.7; " id="videoBG"  autoplay muted loop>
+   <source src="./images/eyelong.mp4" type="video/mp4">
+ </video>-->
+ <!--
+ <video ng-if="lightsPageOpen" ng-click="test()" class="animated fadeIn"  style="position:fixed; border:25px solid rgb(6, 6, 6); z-index:0; right:-500; top:0; opacity:0; " id="videoBG"  autoplay muted loop>
    <source src="./images/eyelong.mp4" type="video/mp4">
  </video>  
- <video ng-if="soundOpen" ng-click="test()" class="animated fadeIn"       style="position:absolute; border:25px solid rgb(6, 6, 6);right:0; top:0; z-index:0; " id="videoBG"  autoplay muted loop>
-   <source src="./images/eyelong.mp4" type="video/mp4">
- </video>
- <video ng-if="lightsPageOpen" ng-click="test()" class="animated fadeIn"  style="position:absolute; border:25px solid rgb(6, 6, 6); right:0; top:0; z-index:0;" id="videoBG"  autoplay muted loop>
-   <source src="./images/eyelong.mp4" type="video/mp4">
- </video>  
- <video ng-if="contactPageOpen" ng-click="test()" class="animated fadeIn" style="position:fixed; left:-430; top:-150; border:25px solid rgb(6, 6, 6);" id="videoBG"  autoplay muted loop>
+ <video ng-if="contactPageOpen" ng-click="test()" class="animated fadeIn" style="position:fixed; left:-430; top:0; border:25px solid rgb(6, 6, 6);" id="videoBG"  autoplay muted loop>
    <source src="./images/mon.mp4" type="video/mp4">
- </video>
+ </video>-->
+
+ <img ng-if="homePageOpen" src ="../images/fire.gif" style="position:fixed; left: -450;height:1080px" >
+ <img ng-if="lightsPageOpen" src ="../images/fire.gif" style="position:fixed; left: -450;height:1080px; opacity:0.7" >
+ <img ng-if="soundOpen" src ="../images/fire.gif" style="position:fixed; left: -450;height:1080px; opacity:0.4" >
+ <img ng-if="contactPageOpen" src ="../images/mon.gif" style="position:fixed; left:-400; height:1080px; opacity:1" >
+
 
 <body class="background" >
 
@@ -105,13 +115,9 @@
                     <img src="./images/ohrhawhite.svg" style=' position:absolute; z-index:9; height:200px; width:100px;  opacity:.3;right:435;top:500'>
                   </h1>
       
-      
                 </div>
                 <div class = "col s4 left-align">
-                  <br>
-                  <br>
-                  
-                
+        
                 </div>
       
             </div>
@@ -547,14 +553,29 @@
         
     
           <div class="col s12" style="  z-index:1000;  border:1px solid white; "><span></span></div>
+
           <div class ="col s12 center-align">
             <br>
             <br>
-          <audio controls>
-            <source src="horse.ogg" type="audio/ogg">
-            <source src="horse.mp3" type="audio/mpeg">
-          Your browser does not support the audio element.
-          </audio>
+              <audio controls>
+                <source src="horse.ogg" type="audio/ogg">
+                <source src="horse.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+              </audio>
+          </div>
+
+          <div class = "row"></div>
+          <div class = "row"></div>
+          <div class = "row"></div>
+          <div class = "row"></div>
+
+          <div class = "row">
+
+            <div class = "col s2"></div>
+            <div class = "col s8" style="border:2px solid rgb(214, 212, 212)"></div>
+            <div class = "col s2"></div>
+
+
           </div>
       </div>
           <div class = "row">
@@ -820,9 +841,6 @@
     </div>
 
   </div>
-       
-      <!-- DESKTOP SITE-->
-
 
 </body>
 
