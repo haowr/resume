@@ -1,4 +1,9 @@
-<html  ng-app="store"ng-controller="mainCtrl" ng-view>
+<html  ng-app="store"ng-controller="mainCtrl" ng-view style=" background: url('./css/fog.jpg') no-repeat center center fixed  ; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+ background-size:cover;
+">
 
 <head>
 
@@ -29,7 +34,8 @@
   <!-- JavaScript Dependencies -->
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.5.1/snap.svg-min.js" integrity="sha256-oI+elz+sIm+jpn8F/qEspKoKveTc5uKeFHNNVexe6d8=" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/jquery-ui.min.js"></script>   
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
   <script type="text/javascript" src="/js/angular-route.js"></script>
@@ -43,27 +49,7 @@
   <!-- JavaScript Dependencies -->
 
 </head>
-<!--
-<video ng-if="homePageOpen" ng-click="test()" class="animated fadeIn"     id="videoBG"  autoplay muted loop>
-   <source src="./images/eyelong.mp4" type="video/mp4">
- </video>  -->
- <!--
- <video ng-if="soundOpen" ng-click="test()" class="animated fadeIn" style="position:fixed; border:25px solid rgb(6, 6, 6); z-index:0; right:-500; top:0;opacity:0.7; " id="videoBG"  autoplay muted loop>
-   <source src="./images/eyelong.mp4" type="video/mp4">
- </video>-->
- <!--
- <video ng-if="lightsPageOpen" ng-click="test()" class="animated fadeIn"  style="position:fixed; border:25px solid rgb(6, 6, 6); z-index:0; right:-500; top:0; opacity:0; " id="videoBG"  autoplay muted loop>
-   <source src="./images/eyelong.mp4" type="video/mp4">
- </video>  
- <video ng-if="contactPageOpen" ng-click="test()" class="animated fadeIn" style="position:fixed; left:-430; top:0; border:25px solid rgb(6, 6, 6);" id="videoBG"  autoplay muted loop>
-   <source src="./images/mon.mp4" type="video/mp4">
- </video>-->
-<!--
- <img ng-if="homePageOpen" src ="../images/fire.gif" style="position:fixed; left: -450;height:1080px" >
- <img ng-if="lightsPageOpen" src ="../images/fire.gif" style="position:fixed; left: -450;height:1080px; opacity:0.5" >
- <img ng-if="soundOpen" src ="../images/fire.gif" style="position:fixed; left: -450;height:1080px; opacity:0.2" >
- <img ng-if="contactPageOpen" class="animated fadeIn" src ="../images/mon.gif" style="position:fixed; left:-420; height:1080px; opacity:1" >
--->
+
 
 <body >
 
@@ -80,176 +66,117 @@
       </div>
       <div class = "col s6">
 
+        <div class = "col s3 center-align" >
+          <a href="#storage" class="white-text" > 
+          <p class= "montserrat flow-text animated fadeIn white-text" style="font-size:58px;"> #1</p>
+          </a>
+        </div>
+
+        <div class = "col s3 center-align">
+          <a href="#rose" class="white-text" >
+            <p class= "montserrat flow-text animated fadeIn white-text" style="font-size:58px;"> #2</p>
+            </a>        </div>
+
+        <div class = "col s3 center-align">
+          <a href="#qlh" class="white-text" >
+            <p class= "montserrat flow-text animated fadeIn white-text" style="font-size:58px;"> #3</p>
+            </a>        </div>
+        <div class = "col s3 center-align">
+          <a href="#cryptowatch" class="white-text" >
+            <p class= "montserrat flow-text animated fadeIn white-text" style="font-size:58px;"> #4</p>
+            </a>        </div>
       </div>
     </div>
       
       <div class = "row">
 
       <div class = "col s6">
-        <div class = "row">
-
-
-        <div class = "col s4 left-align">
-          <i class = "material-icons" style="font-size:50px;"> home</i>
-        </div>
-        <div class = "col s4 left-align">
-          <i class = "material-icons" style="font-size:50px;"> home</i>
-
-
-        </div>
-        <div class = "col s4 left-align">
-          <i class = "material-icons" style="font-size:50px;"> home</i>
-
-
-        </div>
-        </div>
+      
+        
 
       </div>
       <div class = "col s6">
 
       </div>
       </div>
-      <div class = "row">
 
-        <div id="image1"class = "col s6 animated fadeIn" style="border:4px solid black;">
+      <div class = "row section scrollspy" >
+
+        <div id="image1"class = "col s6 animated fadeIn" style="">
         <!---  <img src="./css/SHINEBRIGHTLOGIN.png" class = "responsive-img animated fadeInLeft" style="">-->
 
-        <iframe id="theFrame" src="https://aqueous-woodland-14387.herokuapp.com" style="width:100%; height:1000px;" frameborder="0">
-        </iframe>
-
-        </div>
-        <div class = "col s6 center-align">
-
-          <p class= "montserrat flow-text animated fadeIn" style="font-size:58px;"> SHINE BRIGHT LIFE COACHING</p>
-          <div class = "col s2"></div>
-
-          <div class = "col s8" style="border-bottom: 3px solid black;"></div>
-
-          <div class = "col s2"></div>
-
-          <div class = "row">
-            <div class = "col s12">
-
-              <p class = "montserrat flow-text">
-                Life is hard enough! Making an appointment shouldnt' be! ;)
-              </p>
-
-            </div>
-          </div>
-
-          <div class = "row">
-            <div class = "col s12">
-
-              <p class = "montserrat flow-text">
-                TECH STACK|
-              </p>
-              <div class ="col s3 center-align">
-
-                <p class = "montserrat flow-text">ANGULARJS</p>
-  
-              </div>
-              <div class ="col s3 center-align">
-  
-                <p class = "montserrat flow-text">ANGULARJS</p>
-  
-              </div>
-              <div class ="col s3 center-align">
-  
-                <p class = "montserrat flow-text">ANGULARJS</p>
-  
-              </div>
-              <div class ="col s3 center-align">
-  
-                <p class = "montserrat flow-text">ANGULARJS</p>
-  
-              </div>
-  
-
-            </div>
-         
-          </div>
-         
-
-        </div>
-      </div>
-      <div class = "row">
-
-        <div id="image1"class = "col s6 animated fadeIn" style="border:4px solid black;">
-        <!---  <img src="./css/SHINEBRIGHTLOGIN.png" class = "responsive-img animated fadeInLeft" style="">-->
-
-        <iframe id="theFrame" src="      http://rseinvntry.herokuapp.com/
-        " style="width:100%; height:1000px;" frameborder="0">
-        </iframe>
-
-        </div>
-        <div class = "col s6 center-align">
-
-          <p class= "montserrat flow-text animated fadeIn" style="font-size:58px;"> SHINE BRIGHT LIFE COACHING</p>
-          <div class = "col s2"></div>
-
-          <div class = "col s8" style="border-bottom: 3px solid black;"></div>
-
-          <div class = "col s2"></div>
-
-          <div class = "row">
-            <div class = "col s12">
-
-              <p class = "montserrat flow-text">
-                Life is hard enough! Making an appointment shouldnt' be! ;)
-              </p>
-
-            </div>
-          </div>
-
-          <div class = "row">
-            <div class = "col s12">
-
-              <p class = "montserrat flow-text">
-                TECH STACK|
-              </p>
-              <div class ="col s3 center-align">
-
-                <p class = "montserrat flow-text">ANGULARJS</p>
-  
-              </div>
-              <div class ="col s3 center-align">
-  
-                <p class = "montserrat flow-text">ANGULARJS</p>
-  
-              </div>
-              <div class ="col s3 center-align">
-  
-                <p class = "montserrat flow-text">ANGULARJS</p>
-  
-              </div>
-              <div class ="col s3 center-align">
-  
-                <p class = "montserrat flow-text">ANGULARJS</p>
-  
-              </div>
-  
-
-            </div>
-         
-          </div>
-         
-
-        </div>
-      </div>
-
-      <div class = "row">
-
-        <div id="image1"class = "col s6 animated fadeIn" style="border:4px solid black;">
-        <!---  <img src="./css/SHINEBRIGHTLOGIN.png" class = "responsive-img animated fadeInLeft" style="">-->
-
-        <iframe id="theFrame" src="     https://peaceful-wave-93438.herokuapp.com/
-
+        <iframe id="theFrame" src="https://shinedesigns.ca
 
         " style="width:100%; height:1000px;" frameborder="0">
         </iframe>
 
         </div>
-        <div class = "col s6 center-align">
+        <div class = "col s6 center-align" ">
+
+          <p class= "montserrat flow-text animated fadeIn" style="font-size:58px;"> SHINE DESIGN APP HOUSE</p>
+          <div class = "col s2"></div>
+
+          <div class = "col s8" style="border-bottom: 3px solid black;"></div>
+
+          <div class = "col s2"></div>
+
+          <div class = "row">
+            <div class = "col s12">
+
+              <p class = "montserrat flow-text">
+                Life is hard enough! Making an appointment shouldnt' be! ;)
+              </p>
+
+            </div>
+          </div>
+
+          <div class = "row">
+            <div class = "col s12">
+
+              <p class = "montserrat flow-text">
+                TECH STACK|
+              </p>
+              <div class ="col s3 center-align">
+
+                <p class = "montserrat flow-text">ANGULARJS</p>
+  
+              </div>
+              <div class ="col s3 center-align">
+  
+                <p class = "montserrat flow-text">ANGULARJS</p>
+  
+              </div>
+              <div class ="col s3 center-align">
+  
+                <p class = "montserrat flow-text">ANGULARJS</p>
+  
+              </div>
+              <div class ="col s3 center-align">
+  
+                <p class = "montserrat flow-text">ANGULARJS</p>
+  
+              </div>
+  
+
+            </div>
+         
+          </div>
+         
+
+        </div>
+      </div>
+      <div class = "row section scrollspy" id="rose" >
+
+        <div id="image1"class = "col s6 animated fadeIn" style="">
+        <!---  <img src="./css/SHINEBRIGHTLOGIN.png" class = "responsive-img animated fadeInLeft" style="">-->
+
+        <iframe id="theFrame" src="https://aqueous-woodland-14387.herokuapp.com" 
+
+        " style="width:100%; height:1000px;" frameborder="0">
+        </iframe>
+
+        </div>
+        <div class = "col s6 center-align" ">
 
           <p class= "montserrat flow-text animated fadeIn" style="font-size:58px;"> SHINE BRIGHT LIFE COACHING</p>
           <div class = "col s2"></div>
@@ -303,9 +230,74 @@
 
         </div>
       </div>
-      <div class = "row">
+      <div class = "row section scrollspy" id="qlh" >
 
-        <div id="image1"class = "col s6 animated fadeIn" style="border:4px solid black;">
+        <div id="image1"class = "col s6 animated fadeIn" style="">
+        <!---  <img src="./css/SHINEBRIGHTLOGIN.png" class = "responsive-img animated fadeInLeft" style="">-->
+
+        <iframe id="theFrame" src="https://rseinvntry.herokuapp.com
+
+        " style="width:100%; height:1000px;" frameborder="0">
+        </iframe>
+
+        </div>
+        <div class = "col s6 center-align" ">
+
+          <p class= "montserrat flow-text animated fadeIn" style="font-size:58px;"> ROSE INVENTORY MANAGEMENT</p>
+          <div class = "col s2"></div>
+
+          <div class = "col s8" style="border-bottom: 3px solid black;"></div>
+
+          <div class = "col s2"></div>
+
+          <div class = "row">
+            <div class = "col s12">
+
+              <p class = "montserrat flow-text">
+                Life is hard enough! Making an appointment shouldnt' be! ;)
+              </p>
+
+            </div>
+          </div>
+
+          <div class = "row">
+            <div class = "col s12">
+
+              <p class = "montserrat flow-text">
+                TECH STACK|
+              </p>
+              <div class ="col s3 center-align">
+
+                <p class = "montserrat flow-text">ANGULARJS</p>
+  
+              </div>
+              <div class ="col s3 center-align">
+  
+                <p class = "montserrat flow-text">ANGULARJS</p>
+  
+              </div>
+              <div class ="col s3 center-align">
+  
+                <p class = "montserrat flow-text">ANGULARJS</p>
+  
+              </div>
+              <div class ="col s3 center-align">
+  
+                <p class = "montserrat flow-text">ANGULARJS</p>
+  
+              </div>
+  
+
+            </div>
+         
+          </div>
+         
+
+        </div>
+      </div>
+      <div class = "row section scrollspy" id="cryptowatch" >
+
+        <div id="image1"class = "col s6 animated fadeIn" style="">
         <!---  <img src="./css/SHINEBRIGHTLOGIN.png" class = "responsive-img animated fadeInLeft" style="">-->
 
         <iframe id="theFrame" src="https://coinwatchreactor.herokuapp.com/
@@ -314,9 +306,9 @@
         </iframe>
 
         </div>
-        <div class = "col s6 center-align">
+        <div class = "col s6 center-align" ">
 
-          <p class= "montserrat flow-text animated fadeIn" style="font-size:58px;"> SHINE BRIGHT LIFE COACHING</p>
+          <p class= "montserrat flow-text animated fadeIn" style="font-size:58px;">REACT CRYPTO WATCH</p>
           <div class = "col s2"></div>
 
           <div class = "col s8" style="border-bottom: 3px solid black;"></div>
@@ -368,12 +360,57 @@
 
         </div>
       </div>
+     
   </div>
 
 
 </div>
 
 </body>
+
+<script class="hide-on-med-and-down">
+  $('.scrollspy').scrollSpy({
+    scrollOffset: 35
+  });
+</script>
+
+</div>
+
+<script class="hide-on-med-and-down">
+$('.scrollspy').scrollSpy({
+  scrollOffset: 20000
+});
+
+window.onscroll = function () { scrollFunction() };
+
+function scrollFunction() {
+
+  if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+
+    document.getElementById("menu").style.padding = "00px 0px";
+    document.getElementById("menu").style.height = "150px";
+    document.getElementById("menu").style.position = "fixed";
+    document.getElementById("links3").classList.add('fadeOut')
+    document.getElementById("links2").classList.add('fadeOut')
+    document.getElementById("links").classList.add('fadeOut')
+
+  } else {
+
+    document.getElementById("menu").style.height = "250px";
+    document.getElementById("links").style.display = "inline";
+    document.getElementById("links2").style.display = "inline";
+    document.getElementById("links3").style.display = "inline";
+    document.getElementById("links3").classList.remove('fadeOut')
+    document.getElementById("links2").classList.remove('fadeOut')
+    document.getElementById("links").classList.remove('fadeOut')
+    document.getElementById("links3").classList.add('fadeIn')
+    document.getElementById("links2").classList.add('fadeIn')
+    document.getElementById("links").classList.add('fadeIn')
+
+  }
+}
+</script>
+
 
 </html>
 

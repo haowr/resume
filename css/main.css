@@ -12,7 +12,6 @@ html, body {
     -o-background-size: cover;
      background-size:cover;
 
-
 }
 
 nav {
@@ -21,6 +20,7 @@ nav {
 }
 
 nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons {
+  
   height: 60px;
   line-height: 60px;
 }
