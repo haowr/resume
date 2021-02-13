@@ -1,9 +1,4 @@
-<html  ng-app="store"ng-controller="mainCtrl" ng-view style=" background: url('./css/bck.jpg') no-repeat center center fixed  ; 
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
- background-size:cover;
-">
+<html  ng-app="store"ng-controller="mainCtrl" ng-view class="bg1">
 
 <head>
 
@@ -101,7 +96,7 @@
       </div>
       </div>
 
-      <div class = "row section scrollspy" >
+      <div class = "row section scrollspy" id="top" >
 
         <div id="image1"class = "col s6 animated fadeIn" style="">
         <!---  <img src="./css/SHINEBRIGHTLOGIN.png" class = "responsive-img animated fadeInLeft" style="">-->
@@ -372,47 +367,48 @@
 
 </body>
 
-<script class="hide-on-med-and-down">
-  $('.scrollspy').scrollSpy({
-    scrollOffset: 35
-  });
-</script>
-
 </div>
+<script>
 
-<script class="hide-on-med-and-down">
 $('.scrollspy').scrollSpy({
   scrollOffset: 20000
 });
 
-window.onscroll = function () { scrollFunction() };
+$(window).scroll(function() {
+    var winHeight = $(this).height();
+    var scrollTop = $(this).scrollTop();
+    
+    console.log("windHeight", winHeight)
+    console.log("scrollTop",scrollTop)
 
-function scrollFunction() {
+    if(scrollTop< 1200){
+      $("html").removeClass("bg2").addClass("bg1")
+    }
 
-  if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+    if(scrollTop >= 1200){
 
-    document.getElementById("menu").style.padding = "00px 0px";
-    document.getElementById("menu").style.height = "150px";
-    document.getElementById("menu").style.position = "fixed";
-    document.getElementById("links3").classList.add('fadeOut')
-    document.getElementById("links2").classList.add('fadeOut')
-    document.getElementById("links").classList.add('fadeOut')
+      $("html").removeClass("bg1").removeClass("bg3").addClass("bg2");
+      //$("html").addClass('turnoff').addClass("fadeinn");
 
-  } else {
 
-    document.getElementById("menu").style.height = "250px";
-    document.getElementById("links").style.display = "inline";
-    document.getElementById("links2").style.display = "inline";
-    document.getElementById("links3").style.display = "inline";
-    document.getElementById("links3").classList.remove('fadeOut')
-    document.getElementById("links2").classList.remove('fadeOut')
-    document.getElementById("links").classList.remove('fadeOut')
-    document.getElementById("links3").classList.add('fadeIn')
-    document.getElementById("links2").classList.add('fadeIn')
-    document.getElementById("links").classList.add('fadeIn')
+    }
 
-  }
+    if(scrollTop >= 2177){
+
+$("html").removeClass("bg2").addClass("bg3");
+//$("html").addClass('turnoff').addClass("fadeinn");
+
+
 }
+  
+ //   $("html").removeClass("bg2").addClass("bg1");
+
+
+});
+
+
+
+
 </script>
 
 

@@ -6,12 +6,47 @@ html, body {
     min-width:100%;
     min-height:100%;
     background-color:black;
-    background: url('./bck.JPG') no-repeat center center fixed  ; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-     background-size:cover;
 
+
+}
+
+.bg1{
+
+  background: url('./bck.JPG') no-repeat center center fixed  ; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+   background-size:cover;
+
+
+
+}
+
+.fadeinn{
+  opacity:1;
+  transition:1s;
+}
+.turnoff{
+  opacity:0;
+}
+.fadeout{
+  opacity:0;
+  transition:1s;
+}
+.bg2{
+
+  background: url('./bck2.JPG') no-repeat center center fixed  ; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+   background-size:cover;
+}
+.bg3{
+  background: url('./bck3.JPG') no-repeat center center fixed  ; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+   background-size:cover;
 }
 
 nav {
