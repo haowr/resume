@@ -37,6 +37,13 @@ console.log("OY")
 
         }
         $scope.openShopPage()
+
+        $scope.toppa = function(){
+
+            console.log("oooooo")
+            $( 'html, body' ).animate( { scrollTop: 0 }, 500 );
+
+        }
         $scope.toggleMusic = function(){
             console.log('clicked')
 

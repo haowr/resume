@@ -46,10 +46,12 @@
 </head>
 
 
-<body >    
-  <i id="BTN" class = "material-icons white-text" style=" position:fixed; font-size:100px; bottom:20px; right:0;">change_history</i>
+<body >  
+  <a href="#backtotop" >
+  <i  ng-click='toppa()' class = "material-icons white-text" style=" position:fixed; font-size:100px; bottom:20px; right:0; z-index:1000">change_history</i>
+  </a>
 
-<div >
+<div class="section scrollspy" id="backtotop" >
 
   <div class = "row">
 
@@ -63,7 +65,7 @@
       <div class = "col s6">
 
         <div class = "col s4 center-align"style="border-bottom: 3px solid white;" >
-          <a href="#storage" class="white-text" > 
+          <a  href="#storage"  class="white-text" > 
           <p class= "montserrat flow-text animated fadeIn white-text" style="font-size:58px;"> #1</p>
           </a>
         </div>
@@ -360,23 +362,26 @@
 
 </body>
 
-</div>
 <script>
+
+// A $( document ).ready() block.
+
 
 $('.scrollspy').scrollSpy({
   scrollOffset: 20000
 });
 
-mybutton = document.getElementById("BTN");
+var contents = $('#BTN');
 
-mybutton.onclick = function() {topFunction()};
-
-$('BTN').click(function(){
+contents.click(function(){
 
   console.log("IOY")
-  $("html, body").animate({ scrollTop: 0 }, "slow");
+  //$('html, body').animate({scrollTop: '0px'}, 300);
+
 
 })
+
+
 
 function topFunction() {
  console.log("hello")
@@ -405,7 +410,7 @@ $(window).scroll(function() {
 
     if(scrollTop >= 2577){
 
-$("html").removeClass("bg2").addClass("bg3");
+      $("html").removeClass("bg2").addClass("bg3");
 //$("html").addClass('turnoff').addClass("fadeinn");
 
 
@@ -415,7 +420,6 @@ $("html").removeClass("bg2").addClass("bg3");
 
 
 });
-
 
 
 
