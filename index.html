@@ -46,8 +46,8 @@
 </head>
 
 
-<body >
-  <i class = "material-icons" style=" position:fixed; font-size:500px; top:0; right:0;"></i>
+<body >    
+  <i id="BTN" class = "material-icons white-text" style=" position:fixed; font-size:100px; bottom:20px; right:0;">change_history</i>
 
 <div >
 
@@ -118,7 +118,9 @@
             <div class = "col s12">
 
               <p class = "montserrat flow-text white-text">
-                Life is hard enough! Making an appointment shouldnt' be! ;)
+                The home of Shine Design Application House. Making Web Applications for a diverse collection of clientel for the past 4+ years! 
+                We'd love to speak with you about ways to implement, and integrate the hottest and most powerful new technologies into your companies oprations.
+                Increasing your ability to shine bright!
               </p>
 
             </div>
@@ -132,18 +134,19 @@
               </p>
           
               <div class ="col s4 center-align">
+
+                <p class = "montserrat flow-text white-text">ANGULAR.JS</p>
   
-                <p class = "montserrat flow-text white-text">ANGULARJS</p>
+              </div>
+        
+              <div class ="col s4 center-align">
+  
+                <p class = "montserrat flow-text white-text">MATERIAL CSS</p>
   
               </div>
               <div class ="col s4 center-align">
   
-                <p class = "montserrat flow-text white-text">ANGULARJS</p>
-  
-              </div>
-              <div class ="col s4 center-align">
-  
-                <p class = "montserrat flow-text white-text">ANGULARJS</p>
+                <p class = "montserrat flow-text white-text">HTML5</p>
   
               </div>
   
@@ -247,7 +250,9 @@
             <div class = "col s12">
 
               <p class = "montserrat flow-text white-text">
-                Life is hard enough! Making an appointment shouldnt' be! ;)
+                The home of Shine Design Application House. Making Web Applications for a diverse collection of clientel for the past 4+ years! 
+                We'd love to speak with you about ways to implement, and integrate the hottest and most powerful new technologies into your companies oprations.
+                Increasing your ability to shine bright!
               </p>
 
             </div>
@@ -267,12 +272,12 @@
         
               <div class ="col s4 center-align">
   
-                <p class = "montserrat flow-text white-text">ANGULARJS</p>
+                <p class = "montserrat flow-text white-text">MATERIAL CSS</p>
   
               </div>
               <div class ="col s4 center-align">
   
-                <p class = "montserrat flow-text white-text">ANGULARJS</p>
+                <p class = "montserrat flow-text white-text">HTML5</p>
   
               </div>
   
@@ -361,6 +366,23 @@
 $('.scrollspy').scrollSpy({
   scrollOffset: 20000
 });
+
+mybutton = document.getElementById("BTN");
+
+mybutton.onclick = function() {topFunction()};
+
+$('BTN').click(function(){
+
+  console.log("IOY")
+  $("html, body").animate({ scrollTop: 0 }, "slow");
+
+})
+
+function topFunction() {
+ console.log("hello")
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
 
 $(window).scroll(function() {
     var winHeight = $(this).height();
