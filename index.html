@@ -53,9 +53,13 @@
 
 
 <body >  
-  <a href="#backtotop" >
-  <i  ng-click='toppa()' class = "material-icons white-text" style=" position:fixed; font-size:100px; bottom:20px; right:0; z-index:1000">change_history</i>
+  <a href="#toda" >
+  <i  ng-click='toppa()' class = "material-icons red-text" style=" position:fixed; font-size:100px; bottom:20px; right:0; z-index:1000">change_history</i>
   </a>
+
+  
+  <div  ng-click='toppa()' class = "section scrollspy red" id="rose" style=" position:absolute; height: 40px; width:40px;font-size:100px; top:2042; right:0; z-index:1000">change_history</div>
+
 
 <div class="section scrollspy" id="backtotop" >
 
@@ -65,7 +69,7 @@
 
       <div class = "col s6 left-align">
 
-        <p class= "montserrat flow-text animated fadeIn white-text" style="font-size:58px;"> <span class="white-text">SHINE</span>DESIGN APP <span class="white-text">SHOW</span>CASE</p>
+        <p class= "montserrat flow-text animated fadeIn white-text btnon" style="font-size:58px;"> <span class="white-text">SHINE</span>DESIGN APP <span class="white-text">SHOW</span>CASE</p>
         <div class ="col s9" style="border-bottom:3px solid white;"></div>
         <div class ="col s3" ></div>
 
@@ -287,7 +291,7 @@
         <br>   <br>
         <br>
         <br>
-        <br class=" section scrollspy" id="rose">
+        <br >
         <br>
         <br>
         <br>
@@ -682,13 +686,23 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
+$('.btnon').on('click', function(e){
+
+  e.preventDefault();
+  console.log("cliked")
+
+$("body, html").animate({ 
+  scrollTop: $( $(this).attr('href') ).offset().top 
+}, 600);
+
+})
 $(window).scroll(function() {
 
     var winHeight = $(this).height();
     var scrollTop = $(this).scrollTop();
     
-    //console.log("windHeight", winHeight)
-    //console.log("scrollTop",scrollTop)
+    console.log("windHeight", winHeight)
+    console.log("scrollTop",scrollTop)
 
     if(scrollTop< 1600){
 
