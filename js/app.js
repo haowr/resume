@@ -8,7 +8,6 @@
 
 
     app.config(function ($httpProvider) {
-console.log("OY")
 
     });
 
@@ -24,13 +23,7 @@ console.log("OY")
         $scope.zoomPageOpen = false;
 
         $scope.audio = new Audio('../audio/ui_tap-variant-01.wav')
-        $scope.bgaudio = new Audio('../images/web.wav')
-        $timeout(function(){
 
-            //$scope.bgaudio.play()
-
-
-        },200)
         $scope.openShopPage = function(){
 
             $scope.bgaudio.play()
