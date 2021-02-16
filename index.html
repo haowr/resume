@@ -572,25 +572,9 @@
 <script>
 
 
-$('.scrollspy').scrollSpy({
-  scrollOffset: -5000
-});
 
-function topFunction() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}
 
-$('.btnon').on('click', function(e){
 
-  e.preventDefault();
-  console.log("cliked")
-
-$("body, html").animate({ 
-  scrollTop: $( $(this).attr('href') ).offset().top 
-}, 600);
-
-})
 $(window).scroll(function() {
 
     var winHeight = $(this).height();
