@@ -14,7 +14,7 @@ html, body {
 
 .bg1{
 
-  background: url('./bck50q.JPG') no-repeat center center fixed  ; 
+  background: url('./bck.JPG') no-repeat center center fixed  ; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -24,6 +24,12 @@ html, body {
 
 }
 
+.bgog{  background: url('/css/bck.JPG') no-repeat center center fixed  ; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+   background-size:cover;
+}
 .fadeinn{
   opacity:1;
   transition:1s;
@@ -37,14 +43,14 @@ html, body {
 }
 .bg2{
 
-  background: url('./bck250q.JPG') no-repeat center center fixed  ; 
+  background: url('./bck2.JPG') no-repeat center center fixed  ; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
    background-size:cover;
 }
 .bg3{
-  background: url('./bck350q.JPG') no-repeat center center fixed  ; 
+  background: url('./bck3.JPG') no-repeat center center fixed  ; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

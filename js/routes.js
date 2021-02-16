@@ -79,7 +79,7 @@
         
                 $rootScope.$on('$locationChangeStart', function (event, next, current) {
                     //console.log(Auth.isLoggedIn());
-                   console.log("Oy")
+                   console.log("PORTFOLIO OIa")
                   
                     //if($routeParams.name == )
         
