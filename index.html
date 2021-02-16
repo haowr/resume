@@ -46,6 +46,8 @@
 
 
 <body >  
+
+
   <a href="#backtotop" class="red-text" onclick="return false;">
   <i class = "material-icons red-text" style=" position:fixed; font-size:100px; bottom:20px; right:0; z-index:1000">change_history</i>
   </a>
@@ -570,12 +572,13 @@
 </body>
 
 <script>
-$(document).ready(function(){
 
 
   $('.scrollspy').scrollSpy({
   scrollOffset: -5000
-});
+  }).then(function(data){
+    console.log(data)
+  });
 
 
 $('.rosebutton').click()
@@ -609,7 +612,6 @@ $(window).scroll(function() {
 
 });
 
-})
 </script>
 
 
